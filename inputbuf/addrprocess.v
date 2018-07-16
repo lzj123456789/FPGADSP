@@ -13,20 +13,20 @@ FirInSel, ProcessStart, InBufAddra, InBufAddrb, InCopyEnd);
     wire [9:0] InBufAddra;
     wire [9:0] InBufAddrb;
    
-    wire [1:0] sig1;
-    wire [9:0] sig2;
-    FirAddr Firaddr (.clk(sys_clk), .mode(RisingTone), .en(OutBufwea), .r(ProcessStart), 
-                     .data1(sig1), .data2(sig2));
+    wire [1:0] dataaddr_1;
+    wire [9:0] dataaddr_2;
+    FirAddr Firaddr (.clk(sys_clk), .mode(RisingTone), .en(OutBufwea), .r(reset), 
+                     .data1(dataaddr_1), .data2(dataaddr_2));
                      
-    wire sig3;
+    wire co_I;
     counterL_m #(.counter_bits(2)) 
                 c1(.mode(RisingTone), .clk(sys_clk), .en(1'b1), .r(reset), 
-                   .q(FirInSel), .co(sig3), .load(Firstart), .din(sig1));
+                   .q(FirInSel), .co(co_I), .load(FirStart), .din(dataaddr_1));
     
     wire [9:0] sig4;            
     counterL #(.n(10'h3ff), .counter_bits(10), .setnum(10'h000)) 
-                c2(.clk(sys_clk), .en(sig3), .r(reset), 
-                   .q(sig4), .co(), .load(Firstart), .din(sig2));
+                c2(.clk(sys_clk), .en(co_I), .r(reset), 
+                   .q(sig4), .co(), .load(FirStart), .din(dataaddr_2));
     
     wire [9:0] sig5;           
     counterL #(.n(10'h314), .counter_bits(10), .setnum(10'h015)) 
@@ -43,7 +43,7 @@ FirInSel, ProcessStart, InBufAddra, InBufAddrb, InCopyEnd);
                 d1(.d(sig6), .en(1'b1), .r(1'b0), .clk(sys_clk), .q(sig7));
                 
     wire [9:0] sig8; 
-    full_adder #(.N(10)) a1 (.a({5'b0,sig6}), .b(10'h300), .s(sig8), .ci(1'b0), .co());
+    full_adder #(.N(10)) a1 (.r(reset), .a({5'b0,sig6}), .b(10'h300), .s(sig8), .ci(1'b0), .co());
     
     assign InBufAddrb = InCopy? sig8:sig4;
     assign InBufAddra = InCopy? {5'b0,sig7}:sig5;
