@@ -1,0 +1,12 @@
+module Register(d, ld, sdin, clk, q);
+    parameter N=24;
+    input ld, sdin, clk;
+    input [N-1:0] d;
+    output reg[N-1:0] q;
+    always@(posedge clk)
+       begin
+           if(ld) q = d;
+           else
+                  q = {q[N-2:0], sdin};
+       end
+endmodule

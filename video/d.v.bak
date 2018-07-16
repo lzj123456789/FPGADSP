@@ -1,0 +1,9 @@
+module d(d,q,en,clk);
+    input en, clk, d;
+    output reg q;
+    always@(posedge clk)
+       begin
+           if(en) q=d;
+           else q=q;
+       end
+endmodule
