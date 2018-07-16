@@ -1,0 +1,9 @@
+module div_2(clk,clk_2);
+    input clk;
+    output clk_2;
+    reg clk_2;
+    always@(posedge clk)
+       begin
+           clk_2 = ~clk_2;
+       end
+endmodule
