@@ -43,7 +43,7 @@ module process_tb_v;
 		.ready(ready), 
 		.SampleIn(SampleIn), 
 		.SampleOut(SampleOut),
-		.SampleCount(SampleCount)
+		.SampleCount()
 	);
    glbl glbl();
    initial begin clk = 0;forever #(DELY/2) clk = ~clk;end

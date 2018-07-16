@@ -12,7 +12,7 @@ module	change_voice(SampleIn,ready,clk,RisingTone,reset,SampleOut,SampleCount);
 	addrprocess inputaddr(
 		//input
 		.sys_clk(clk),.InCopy(InCopy),.ready(ready),.RisingTone(RisingTone),
-		.FirStart(FirStart),.reset(reset),
+		.FirStart(FirStart),.reset(reset),.OutBufwea(OutBufWea),
 		//output
 		.InBufAddra(InBufAddra),.InBufAddrb(InBufAddrb),.FirInSel(FirInSel),
 		.InCopyEnd(InCopyEnd),.ProcessStart(ProcessStart)
@@ -40,9 +40,9 @@ module	change_voice(SampleIn,ready,clk,RisingTone,reset,SampleOut,SampleCount);
 	control control(
 		//input
 		.IncopyEnd(InCopyEnd),.reset(reset),.FirEnd(FirEnd),.ProcessEnd(ProcessEnd),
-		.clk(clk),.ProcessStart(ProcessStart),
+		.clk(clk),.ProcessStart(ProcessStart),.ready(ready),
 		//output
-		.FirStart(FirStart),.OutBufWea(OutBufWea),.Incopy(InCopy)
+		.FirStart(FirStart),.OutBufWea(OutBufWea),.Incopy(InCopy),.FirOe(FirOe)
 		);
 	
 	wire[9:0] Out_a_1, Out_a_2, Out_a;
@@ -67,7 +67,7 @@ module	change_voice(SampleIn,ready,clk,RisingTone,reset,SampleOut,SampleCount);
 	//平滑滤波
 	smoothFilter smoothFilter(
 		.RisingTone(RisingTone),.sys_clk(clk),.ready(ready),
-		.reset(reset),.Outa(Out_a),.Outd(yout),.OutBufWea(OutBufWea),.SampleOut(SampleOut)
+		.reset(reset),.Outa(Out_a),.Outd(Outd),.OutBufWea(OutBufWea),.SampleOut(SampleOut)
 		);
 		
 endmodule
