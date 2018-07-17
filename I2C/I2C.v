@@ -1,7 +1,8 @@
 module I2C(reset, write, I2C_clk, Addr, SubAddrH, SubAddrL, Data, SDA, SCL, ready, errory);
     input reset, write, I2C_clk;
     input [7:0] Addr, SubAddrH, SubAddrL, Data;
-    output SDA, SCL, ready, errory;
+    output ready, errory;
+    inout SDA, SCL;
     
     wire [2:0] sel;
     
