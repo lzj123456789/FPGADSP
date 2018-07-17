@@ -9,6 +9,7 @@ module control(ready,IncopyEnd,ProcessStart,reset,FirEnd,ProcessEnd,clk,
 	
 	parameter Wait = 3'b000,FirReset = 3'b001,MAC = 3'b010,DataOut = 3'b011,
 		RAMWrite = 3'b100,CopyWait = 3'b101,Copy = 3'b110;
+		
 	
 	always @(posedge clk)
 	begin
@@ -78,6 +79,13 @@ module control(ready,IncopyEnd,ProcessStart,reset,FirEnd,ProcessEnd,clk,
 					else 
 						nextstate <= Copy;
 				end
+					 
+			default:
+				begin
+					FirStart <= 0;FirOe <= 0;OutBufWea <= 0;Incopy <= 0;
+					nextstate <= Wait;
+				end	
+				
 		endcase
 	end
 	

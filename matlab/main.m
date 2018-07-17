@@ -2,7 +2,7 @@ clc; clear; close all;
 %% ¸ßÍ¨ÂË²¨Æ÷
 %N=32?
 N = 32;
-omega_c = 200/4800*2*pi;
+omega_c = 400/4800*2*pi;
 n = 0:N-1;
 tau = (N-1)/2;
 %h_d(n)
@@ -43,7 +43,7 @@ h = h * 2^15;
 h = round(h);
 h_bin = complement(h,16);
 for i = 1:N
-    fprintf(['5''b', dec2bin(i-1,5),': h_n = 16''b',h_bin(i,:),';\n']);
+    fprintf(['5''b', dec2bin(i-1,5),': dout = 16''b',h_bin(i,:),';\n']);
 end
 
 
