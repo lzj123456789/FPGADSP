@@ -15,7 +15,7 @@ FirInSel, ProcessStart, InBufAddra, InBufAddrb, InCopyEnd);
    
     wire [1:0] dataaddr_1;
     wire [9:0] dataaddr_2;
-    FirAddr Firaddr (.clk(sys_clk), .mode(RisingTone), .en(OutBufwea), .r(reset), 
+    FirAddr Firaddr (.clk(sys_clk), .mode(RisingTone), .en(OutBufwea), .r(ProcessStart), 
                      .data1(dataaddr_1), .data2(dataaddr_2));
                      
     wire co_I;
