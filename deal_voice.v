@@ -17,7 +17,7 @@ module deal_voice(clk, reset, ADC_SDATA, ChangeEn, RisingTone,
 	//音频输入处理
 	wire[23:0] LeftPlayData, RightPlayData, LeftRecData, RightRecData;
     wire NewFrame;
-	AudioInterface de_coder(
+	de_coder de_coder(
 		.clk(audio_clk), 
 		.reset(reset), 
 		.ADC_SDATA(ADC_SDATA), 
