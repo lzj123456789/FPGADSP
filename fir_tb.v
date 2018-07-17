@@ -6,7 +6,7 @@ module fir_tb;
    integer i; 
    wire [15:0] yOut;
   //  fir  instance  fir(clk, reset, xIn, sample, yOut);
-    fir fir_inst(
+    fir_H fir_inst(
     .clk(clk), 
     .reset(reset), 
     .xIn(xIn), //
@@ -17,7 +17,7 @@ module fir_tb;
   reg [15:0] buffer[0:1023] ; //???????????
   initial 
   begin 
-  $readmemh("D:\\Under3Second\\fpga\\src\\src\\fir_in.txt",buffer);
+  $readmemh("D:\\Under3Second\\fpga\\gitwork\\fir_in.txt",buffer);
    reset = 1;
    sample=0;
    #(DELY*2+1)	  reset = 0; 

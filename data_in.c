@@ -12,7 +12,7 @@ if(( fp=fopen("fir_in.txt","w"))==NULL)
 }
 for(i=0;i<1024;i++)
    {  data=(int)
-	  ( (sin(2*3.1415926*i/16)+ sin(2*3.1415926*i/3.2 ) )*16383);
+	  ( (0.5*sin(3.1415926*i/30)+ sin(3.1415926*i/10 ) )/1.5*127);
 	    data &=0x0000ffff;//16bit
 	fprintf(fp,"%x\n",data);
     }
