@@ -1,0 +1,1094 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Tue Jul 17 16:35:52 2018
+# Process ID: 7044
+# Current directory: F:/lab20_VoiceChanger/vivado/voicechange/voicechange.runs/synth_1
+# Command line: vivado.exe -log deal_voice.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source deal_voice.tcl
+# Log file: F:/lab20_VoiceChanger/vivado/voicechange/voicechange.runs/synth_1/deal_voice.vds
+# Journal file: F:/lab20_VoiceChanger/vivado/voicechange/voicechange.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source deal_voice.tcl -notrace
+Command: synth_design -top deal_voice -part xc7a200tfbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t-fbg484'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t-fbg484'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7332 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 319.063 ; gain = 74.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'deal_voice' [F:/lab20_VoiceChanger/FPGADSP/deal_voice.v:1]
+INFO: [Synth 8-638] synthesizing module 'DCM_PLL' [F:/lab20_VoiceChanger/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-7044-Admin-pc/realtime/DCM_PLL_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'DCM_PLL' (1#1) [F:/lab20_VoiceChanger/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-7044-Admin-pc/realtime/DCM_PLL_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'de_coder' [F:/lab20_VoiceChanger/FPGADSP/de_coder.v:1]
+INFO: [Synth 8-638] synthesizing module 'video_top' [F:/lab20_VoiceChanger/FPGADSP/video/video_top.v:1]
+	Parameter N bound to: 24 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'q8' [F:/lab20_VoiceChanger/FPGADSP/video/q8.v:1]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'q8' (2#1) [F:/lab20_VoiceChanger/FPGADSP/video/q8.v:1]
+INFO: [Synth 8-638] synthesizing module 'Produce' [F:/lab20_VoiceChanger/FPGADSP/video/produce.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Produce' (3#1) [F:/lab20_VoiceChanger/FPGADSP/video/produce.v:1]
+INFO: [Synth 8-638] synthesizing module 'Register' [F:/lab20_VoiceChanger/FPGADSP/video/Register.v:1]
+	Parameter N bound to: 24 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Register' (4#1) [F:/lab20_VoiceChanger/FPGADSP/video/Register.v:1]
+INFO: [Synth 8-638] synthesizing module 'd' [F:/lab20_VoiceChanger/FPGADSP/video/d.v:1]
+	Parameter N bound to: 24 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd' (5#1) [F:/lab20_VoiceChanger/FPGADSP/video/d.v:1]
+INFO: [Synth 8-256] done synthesizing module 'video_top' (6#1) [F:/lab20_VoiceChanger/FPGADSP/video/video_top.v:1]
+INFO: [Synth 8-638] synthesizing module 'Com' [F:/lab20_VoiceChanger/FPGADSP/Com/Com.v:1]
+INFO: [Synth 8-638] synthesizing module 'counterT' [F:/lab20_VoiceChanger/FPGADSP/counterT.v:1]
+	Parameter n bound to: 32 - type: integer 
+	Parameter counter_bits bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counterT' (7#1) [F:/lab20_VoiceChanger/FPGADSP/counterT.v:1]
+INFO: [Synth 8-638] synthesizing module 'Com_control' [F:/lab20_VoiceChanger/FPGADSP/Com/Com_control.v:1]
+	Parameter Comreset bound to: 0 - type: integer 
+	Parameter ComWrite bound to: 1 - type: integer 
+	Parameter ComWait bound to: 2 - type: integer 
+	Parameter ComStop bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Com_control' (8#1) [F:/lab20_VoiceChanger/FPGADSP/Com/Com_control.v:1]
+INFO: [Synth 8-638] synthesizing module 'decoder5_16' [F:/lab20_VoiceChanger/FPGADSP/Com/decoder5_16.v:1]
+INFO: [Synth 8-256] done synthesizing module 'decoder5_16' (9#1) [F:/lab20_VoiceChanger/FPGADSP/Com/decoder5_16.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Com' (10#1) [F:/lab20_VoiceChanger/FPGADSP/Com/Com.v:1]
+INFO: [Synth 8-638] synthesizing module 'I2C' [F:/lab20_VoiceChanger/FPGADSP/I2C/I2C.v:1]
+INFO: [Synth 8-638] synthesizing module 'I2C_Control' [F:/lab20_VoiceChanger/FPGADSP/I2C/I2C_Control.v:1]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter Start bound to: 1 - type: integer 
+	Parameter Startbit bound to: 2 - type: integer 
+	Parameter AddrWR bound to: 3 - type: integer 
+	Parameter AckAddrWR bound to: 4 - type: integer 
+	Parameter SubAddrHWR bound to: 5 - type: integer 
+	Parameter AckAddrHWR bound to: 6 - type: integer 
+	Parameter SubAddrLWR bound to: 7 - type: integer 
+	Parameter AckAddrLWR bound to: 8 - type: integer 
+	Parameter DataWR bound to: 9 - type: integer 
+	Parameter AckDataWR bound to: 10 - type: integer 
+	Parameter Stop bound to: 11 - type: integer 
+	Parameter Ready bound to: 12 - type: integer 
+	Parameter Err bound to: 13 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [F:/lab20_VoiceChanger/FPGADSP/I2C/I2C_Control.v:16]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/lab20_VoiceChanger/FPGADSP/I2C/I2C_Control.v:14]
+INFO: [Synth 8-256] done synthesizing module 'I2C_Control' (11#1) [F:/lab20_VoiceChanger/FPGADSP/I2C/I2C_Control.v:1]
+INFO: [Synth 8-638] synthesizing module 'sub' [F:/lab20_VoiceChanger/FPGADSP/I2C/sub.v:1]
+INFO: [Synth 8-256] done synthesizing module 'sub' (12#1) [F:/lab20_VoiceChanger/FPGADSP/I2C/sub.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/lab20_VoiceChanger/FPGADSP/I2C/I2C.v:18]
+INFO: [Synth 8-638] synthesizing module 'div_2' [F:/lab20_VoiceChanger/FPGADSP/I2C/div_2.v:1]
+INFO: [Synth 8-256] done synthesizing module 'div_2' (13#1) [F:/lab20_VoiceChanger/FPGADSP/I2C/div_2.v:1]
+INFO: [Synth 8-256] done synthesizing module 'I2C' (14#1) [F:/lab20_VoiceChanger/FPGADSP/I2C/I2C.v:1]
+WARNING: [Synth 8-3848] Net I1C_clk in module/entity de_coder does not have driver. [F:/lab20_VoiceChanger/FPGADSP/de_coder.v:38]
+INFO: [Synth 8-256] done synthesizing module 'de_coder' (15#1) [F:/lab20_VoiceChanger/FPGADSP/de_coder.v:1]
+INFO: [Synth 8-638] synthesizing module 'dffre' [F:/lab20_VoiceChanger/FPGADSP/inputbuf/dffre.v:1]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dffre' (16#1) [F:/lab20_VoiceChanger/FPGADSP/inputbuf/dffre.v:1]
+INFO: [Synth 8-638] synthesizing module 'fir_H' [F:/lab20_VoiceChanger/FPGADSP/fir_H.v:1]
+INFO: [Synth 8-638] synthesizing module 'firControl' [F:/lab20_VoiceChanger/FPGADSP/firControl.v:1]
+	Parameter RESET bound to: 0 - type: integer 
+	Parameter MAC bound to: 1 - type: integer 
+	Parameter DATAOUT bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [F:/lab20_VoiceChanger/FPGADSP/firControl.v:12]
+INFO: [Synth 8-256] done synthesizing module 'firControl' (17#1) [F:/lab20_VoiceChanger/FPGADSP/firControl.v:1]
+INFO: [Synth 8-638] synthesizing module 'dffre__parameterized0' [F:/lab20_VoiceChanger/FPGADSP/inputbuf/dffre.v:1]
+	Parameter WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dffre__parameterized0' (17#1) [F:/lab20_VoiceChanger/FPGADSP/inputbuf/dffre.v:1]
+INFO: [Synth 8-638] synthesizing module 'SelTWtoO' [F:/lab20_VoiceChanger/FPGADSP/SelTWtoO.v:1]
+INFO: [Synth 8-256] done synthesizing module 'SelTWtoO' (18#1) [F:/lab20_VoiceChanger/FPGADSP/SelTWtoO.v:1]
+INFO: [Synth 8-638] synthesizing module 'h_rom_h' [F:/lab20_VoiceChanger/FPGADSP/h_rom_h.v:1]
+INFO: [Synth 8-256] done synthesizing module 'h_rom_h' (19#1) [F:/lab20_VoiceChanger/FPGADSP/h_rom_h.v:1]
+INFO: [Synth 8-638] synthesizing module 'booth_multiplier' [F:/lab20_VoiceChanger/FPGADSP/booth_multiplier.v:3]
+INFO: [Synth 8-638] synthesizing module 'boothEncode' [F:/lab20_VoiceChanger/FPGADSP/boothEncode.v:2]
+INFO: [Synth 8-256] done synthesizing module 'boothEncode' (20#1) [F:/lab20_VoiceChanger/FPGADSP/boothEncode.v:2]
+INFO: [Synth 8-638] synthesizing module 'subMultiply' [F:/lab20_VoiceChanger/FPGADSP/subMultiply.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/lab20_VoiceChanger/FPGADSP/subMultiply.v:9]
+INFO: [Synth 8-256] done synthesizing module 'subMultiply' (21#1) [F:/lab20_VoiceChanger/FPGADSP/subMultiply.v:2]
+INFO: [Synth 8-638] synthesizing module 'subSum' [F:/lab20_VoiceChanger/FPGADSP/subSum.v:2]
+INFO: [Synth 8-638] synthesizing module 'Naddr' [F:/lab20_VoiceChanger/FPGADSP/Naddr.v:2]
+	Parameter N bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Naddr' (22#1) [F:/lab20_VoiceChanger/FPGADSP/Naddr.v:2]
+INFO: [Synth 8-638] synthesizing module 'Naddr__parameterized0' [F:/lab20_VoiceChanger/FPGADSP/Naddr.v:2]
+	Parameter N bound to: 24 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Naddr__parameterized0' (22#1) [F:/lab20_VoiceChanger/FPGADSP/Naddr.v:2]
+INFO: [Synth 8-638] synthesizing module 'Naddr__parameterized1' [F:/lab20_VoiceChanger/FPGADSP/Naddr.v:2]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Naddr__parameterized1' (22#1) [F:/lab20_VoiceChanger/FPGADSP/Naddr.v:2]
+INFO: [Synth 8-256] done synthesizing module 'subSum' (23#1) [F:/lab20_VoiceChanger/FPGADSP/subSum.v:2]
+INFO: [Synth 8-256] done synthesizing module 'booth_multiplier' (24#1) [F:/lab20_VoiceChanger/FPGADSP/booth_multiplier.v:3]
+INFO: [Synth 8-638] synthesizing module 'Naddr__parameterized2' [F:/lab20_VoiceChanger/FPGADSP/Naddr.v:2]
+	Parameter N bound to: 33 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Naddr__parameterized2' (24#1) [F:/lab20_VoiceChanger/FPGADSP/Naddr.v:2]
+INFO: [Synth 8-638] synthesizing module 'dffre__parameterized1' [F:/lab20_VoiceChanger/FPGADSP/inputbuf/dffre.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dffre__parameterized1' (24#1) [F:/lab20_VoiceChanger/FPGADSP/inputbuf/dffre.v:1]
+INFO: [Synth 8-256] done synthesizing module 'fir_H' (25#1) [F:/lab20_VoiceChanger/FPGADSP/fir_H.v:1]
+WARNING: [Synth 8-350] instance 'firh' of module 'fir_H' requires 5 connections, but only 4 given [F:/lab20_VoiceChanger/FPGADSP/deal_voice.v:42]
+INFO: [Synth 8-638] synthesizing module 'changevoice' [F:/lab20_VoiceChanger/FPGADSP/changevoice.v:1]
+INFO: [Synth 8-638] synthesizing module 'addrprocess' [F:/lab20_VoiceChanger/FPGADSP/inputbuf/addrprocess.v:1]
+	Parameter I bound to: 3 - type: integer 
+	Parameter D bound to: 4 - type: integer 
+	Parameter addr_bits bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'FirAddr' [F:/lab20_VoiceChanger/FPGADSP/inputbuf/FirAddr.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/lab20_VoiceChanger/FPGADSP/inputbuf/FirAddr.v:16]
+INFO: [Synth 8-256] done synthesizing module 'FirAddr' (26#1) [F:/lab20_VoiceChanger/FPGADSP/inputbuf/FirAddr.v:1]
+INFO: [Synth 8-638] synthesizing module 'counterL_m' [F:/lab20_VoiceChanger/FPGADSP/inputbuf/counerL_m.v:1]
+	Parameter counter_bits bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counterL_m' (27#1) [F:/lab20_VoiceChanger/FPGADSP/inputbuf/counerL_m.v:1]
+INFO: [Synth 8-638] synthesizing module 'counterL' [F:/lab20_VoiceChanger/FPGADSP/inputbuf/counterL.v:1]
+	Parameter n bound to: 10'b1111111111 
+	Parameter counter_bits bound to: 10 - type: integer 
+	Parameter setnum bound to: 10'b0000000000 
+INFO: [Synth 8-256] done synthesizing module 'counterL' (28#1) [F:/lab20_VoiceChanger/FPGADSP/inputbuf/counterL.v:1]
+INFO: [Synth 8-638] synthesizing module 'counterL__parameterized0' [F:/lab20_VoiceChanger/FPGADSP/inputbuf/counterL.v:1]
+	Parameter n bound to: 10'b1100010100 
+	Parameter counter_bits bound to: 10 - type: integer 
+	Parameter setnum bound to: 10'b0000010101 
+INFO: [Synth 8-256] done synthesizing module 'counterL__parameterized0' (28#1) [F:/lab20_VoiceChanger/FPGADSP/inputbuf/counterL.v:1]
+INFO: [Synth 8-638] synthesizing module 'counterL__parameterized1' [F:/lab20_VoiceChanger/FPGADSP/inputbuf/counterL.v:1]
+	Parameter n bound to: 5'b10101 
+	Parameter counter_bits bound to: 5 - type: integer 
+	Parameter setnum bound to: 5'b00000 
+INFO: [Synth 8-256] done synthesizing module 'counterL__parameterized1' (28#1) [F:/lab20_VoiceChanger/FPGADSP/inputbuf/counterL.v:1]
+INFO: [Synth 8-638] synthesizing module 'dffre__parameterized2' [F:/lab20_VoiceChanger/FPGADSP/inputbuf/dffre.v:1]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dffre__parameterized2' (28#1) [F:/lab20_VoiceChanger/FPGADSP/inputbuf/dffre.v:1]
+INFO: [Synth 8-638] synthesizing module 'full_adder' [F:/lab20_VoiceChanger/FPGADSP/inputbuf/full_adder.v:1]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'full_adder' (29#1) [F:/lab20_VoiceChanger/FPGADSP/inputbuf/full_adder.v:1]
+INFO: [Synth 8-256] done synthesizing module 'addrprocess' (30#1) [F:/lab20_VoiceChanger/FPGADSP/inputbuf/addrprocess.v:1]
+INFO: [Synth 8-638] synthesizing module 'InOutBuffer' [F:/lab20_VoiceChanger/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-7044-Admin-pc/realtime/InOutBuffer_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'InOutBuffer' (31#1) [F:/lab20_VoiceChanger/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-7044-Admin-pc/realtime/InOutBuffer_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'fir_L' [F:/lab20_VoiceChanger/FPGADSP/fir.v:1]
+INFO: [Synth 8-638] synthesizing module 'counterT__parameterized0' [F:/lab20_VoiceChanger/FPGADSP/counterT.v:1]
+	Parameter n bound to: 64 - type: integer 
+	Parameter counter_bits bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counterT__parameterized0' (31#1) [F:/lab20_VoiceChanger/FPGADSP/counterT.v:1]
+INFO: [Synth 8-638] synthesizing module 'h_rom_l' [F:/lab20_VoiceChanger/FPGADSP/h_rom_l.v:1]
+INFO: [Synth 8-256] done synthesizing module 'h_rom_l' (32#1) [F:/lab20_VoiceChanger/FPGADSP/h_rom_l.v:1]
+INFO: [Synth 8-256] done synthesizing module 'fir_L' (33#1) [F:/lab20_VoiceChanger/FPGADSP/fir.v:1]
+INFO: [Synth 8-638] synthesizing module 'control' [F:/lab20_VoiceChanger/FPGADSP/control.v:1]
+	Parameter Wait bound to: 3'b000 
+	Parameter FirReset bound to: 3'b001 
+	Parameter MAC bound to: 3'b010 
+	Parameter DataOut bound to: 3'b011 
+	Parameter RAMWrite bound to: 3'b100 
+	Parameter CopyWait bound to: 3'b101 
+	Parameter Copy bound to: 3'b110 
+INFO: [Synth 8-256] done synthesizing module 'control' (34#1) [F:/lab20_VoiceChanger/FPGADSP/control.v:1]
+INFO: [Synth 8-638] synthesizing module 'counterT__parameterized1' [F:/lab20_VoiceChanger/FPGADSP/counterT.v:1]
+	Parameter n bound to: 10'b1111111111 
+	Parameter counter_bits bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counterT__parameterized1' (34#1) [F:/lab20_VoiceChanger/FPGADSP/counterT.v:1]
+INFO: [Synth 8-638] synthesizing module 'counterT__parameterized2' [F:/lab20_VoiceChanger/FPGADSP/counterT.v:1]
+	Parameter n bound to: 10'b1000111111 
+	Parameter counter_bits bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counterT__parameterized2' (34#1) [F:/lab20_VoiceChanger/FPGADSP/counterT.v:1]
+INFO: [Synth 8-638] synthesizing module 'smoothFilter' [F:/lab20_VoiceChanger/FPGADSP/smoothFilter.v:1]
+INFO: [Synth 8-638] synthesizing module 'signalGenerate' [F:/lab20_VoiceChanger/FPGADSP/signalGenerate.v:1]
+INFO: [Synth 8-256] done synthesizing module 'signalGenerate' (35#1) [F:/lab20_VoiceChanger/FPGADSP/signalGenerate.v:1]
+INFO: [Synth 8-638] synthesizing module 'smoothController' [F:/lab20_VoiceChanger/FPGADSP/smoothController.v:1]
+	Parameter RESET bound to: 0 - type: integer 
+	Parameter SampleAddCount bound to: 1 - type: integer 
+	Parameter LoadData2 bound to: 2 - type: integer 
+	Parameter MAC1 bound to: 3 - type: integer 
+	Parameter MAC2 bound to: 4 - type: integer 
+	Parameter OutData bound to: 5 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element AddrSel_reg was removed.  [F:/lab20_VoiceChanger/FPGADSP/smoothController.v:19]
+INFO: [Synth 8-256] done synthesizing module 'smoothController' (36#1) [F:/lab20_VoiceChanger/FPGADSP/smoothController.v:1]
+INFO: [Synth 8-638] synthesizing module 'counterT__parameterized3' [F:/lab20_VoiceChanger/FPGADSP/counterT.v:1]
+	Parameter n bound to: 768 - type: integer 
+	Parameter counter_bits bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counterT__parameterized3' (36#1) [F:/lab20_VoiceChanger/FPGADSP/counterT.v:1]
+INFO: [Synth 8-638] synthesizing module 'dffre__parameterized3' [F:/lab20_VoiceChanger/FPGADSP/inputbuf/dffre.v:1]
+	Parameter WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dffre__parameterized3' (36#1) [F:/lab20_VoiceChanger/FPGADSP/inputbuf/dffre.v:1]
+INFO: [Synth 8-256] done synthesizing module 'smoothFilter' (37#1) [F:/lab20_VoiceChanger/FPGADSP/smoothFilter.v:1]
+WARNING: [Synth 8-3848] Net SampleCount in module/entity changevoice does not have driver. [F:/lab20_VoiceChanger/FPGADSP/changevoice.v:4]
+INFO: [Synth 8-256] done synthesizing module 'changevoice' (38#1) [F:/lab20_VoiceChanger/FPGADSP/changevoice.v:1]
+INFO: [Synth 8-256] done synthesizing module 'deal_voice' (39#1) [F:/lab20_VoiceChanger/FPGADSP/deal_voice.v:1]
+WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[9]
+WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[8]
+WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[7]
+WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[6]
+WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[5]
+WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[4]
+WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[3]
+WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[2]
+WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[1]
+WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 365.211 ; gain = 120.516
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin i1:I2C_clk to constant 0 [F:/lab20_VoiceChanger/FPGADSP/de_coder.v:36]
+WARNING: [Synth 8-3295] tying undriven pin firh:reset to constant 0 [F:/lab20_VoiceChanger/FPGADSP/deal_voice.v:42]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 365.211 ; gain = 120.516
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tfbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/lab20_VoiceChanger/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-7044-Admin-pc/dcp5/DCM_PLL_in_context.xdc] for cell 'DCM'
+Finished Parsing XDC File [F:/lab20_VoiceChanger/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-7044-Admin-pc/dcp5/DCM_PLL_in_context.xdc] for cell 'DCM'
+Parsing XDC File [F:/lab20_VoiceChanger/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-7044-Admin-pc/dcp7/InOutBuffer_in_context.xdc] for cell 'changevoice/smoothFilter/InOutbuf1'
+Finished Parsing XDC File [F:/lab20_VoiceChanger/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-7044-Admin-pc/dcp7/InOutBuffer_in_context.xdc] for cell 'changevoice/smoothFilter/InOutbuf1'
+Parsing XDC File [F:/lab20_VoiceChanger/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-7044-Admin-pc/dcp7/InOutBuffer_in_context.xdc] for cell 'changevoice/InOutBuf'
+Finished Parsing XDC File [F:/lab20_VoiceChanger/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-7044-Admin-pc/dcp7/InOutBuffer_in_context.xdc] for cell 'changevoice/InOutBuf'
+Parsing XDC File [F:/lab20_VoiceChanger/vivado/voicechange/voicechange.srcs/constrs_1/new/DEALVOICE.xdc]
+Finished Parsing XDC File [F:/lab20_VoiceChanger/vivado/voicechange/voicechange.srcs/constrs_1/new/DEALVOICE.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/lab20_VoiceChanger/vivado/voicechange/voicechange.srcs/constrs_1/new/DEALVOICE.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/deal_voice_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/deal_voice_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 721.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 721.367 ; gain = 476.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 721.367 ; gain = 476.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  F:/lab20_VoiceChanger/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-7044-Admin-pc/dcp5/DCM_PLL_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  F:/lab20_VoiceChanger/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-7044-Admin-pc/dcp5/DCM_PLL_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for DCM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for changevoice/InOutBuf. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for changevoice/smoothFilter/InOutbuf1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 721.367 ; gain = 476.672
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element q_reg was removed.  [F:/lab20_VoiceChanger/FPGADSP/video/q8.v:6]
+INFO: [Synth 8-5544] ROM "oe" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element data2_reg was removed.  [F:/lab20_VoiceChanger/FPGADSP/inputbuf/FirAddr.v:11]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'control'
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/lab20_VoiceChanger/FPGADSP/control.v:17]
+INFO: [Synth 8-5544] ROM "Incopy" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "OutBufWea" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FirOe" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FirStart" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'smoothController'
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/lab20_VoiceChanger/FPGADSP/smoothController.v:10]
+INFO: [Synth 8-5544] ROM "OutEn" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SClr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FactorSel" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'InsideSda_reg' [F:/lab20_VoiceChanger/FPGADSP/I2C/I2C.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'nextstate_reg' [F:/lab20_VoiceChanger/FPGADSP/firControl.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'P_reg' [F:/lab20_VoiceChanger/FPGADSP/subMultiply.v:10]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/lab20_VoiceChanger/FPGADSP/control.v:17]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/lab20_VoiceChanger/FPGADSP/control.v:17]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Wait |                              000 |                              000
+                FirReset |                              001 |                              001
+                     MAC |                              010 |                              010
+                 DataOut |                              011 |                              011
+                RAMWrite |                              100 |                              100
+                CopyWait |                              101 |                              101
+                    Copy |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'control'
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/lab20_VoiceChanger/FPGADSP/control.v:17]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/lab20_VoiceChanger/FPGADSP/smoothController.v:10]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/lab20_VoiceChanger/FPGADSP/smoothController.v:10]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   RESET |                              000 |                              000
+          SampleAddCount |                              001 |                              001
+               LoadData2 |                              010 |                              010
+                    MAC1 |                              011 |                              011
+                    MAC2 |                              100 |                              100
+                 OutData |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'smoothController'
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/lab20_VoiceChanger/FPGADSP/smoothController.v:10]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 721.367 ; gain = 476.672
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 24    
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 7     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 570   
++---Registers : 
+	               32 Bit    Registers := 2     
+	               24 Bit    Registers := 5     
+	               16 Bit    Registers := 35    
+	               10 Bit    Registers := 6     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 5     
+	   2 Input     16 Bit        Muxes := 12    
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 7     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   3 Input      4 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 4     
+	  15 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 24    
+	  13 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   8 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 6     
+	  15 Input      1 Bit        Muxes := 6     
+	   7 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 27    
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module deal_voice 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+Module q8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module Register 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+Module d 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+Module video_top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+Module counterT 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module Com_control 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module I2C_Control 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 2     
+	  15 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 6     
+Module sub 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+Module div_2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module I2C 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input      1 Bit        Muxes := 1     
+Module dffre 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module firControl 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module dffre__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module boothEncode 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 1     
+Module subMultiply 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
++---Muxes : 
+	   6 Input      1 Bit        Muxes := 1     
+Module Naddr 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 20    
+Module Naddr__parameterized0 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 24    
+Module Naddr__parameterized1 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 32    
+Module Naddr__parameterized2 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 33    
+Module dffre__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module fir_H 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+Module FirAddr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+Module counterL_m 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module counterL 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module counterL__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module counterL__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module dffre__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module full_adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     11 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+Module addrprocess 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+Module counterT__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+Module h_rom_l 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module fir_L 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+Module control 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input      3 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 4     
+Module counterT__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+Module counterT__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+Module signalGenerate 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module smoothController 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      3 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 3     
+Module counterT__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+Module dffre__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+Module smoothFilter 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+Module changevoice 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element Firaddr/data2_reg was removed.  [F:/lab20_VoiceChanger/FPGADSP/inputbuf/FirAddr.v:11]
+WARNING: [Synth 8-6014] Unused sequential element de_coder/i1/i1/errory_reg was removed.  [F:/lab20_VoiceChanger/FPGADSP/I2C/I2C_Control.v:20]
+WARNING: [Synth 8-6014] Unused sequential element de_coder/v1/q_8/q_reg was removed.  [F:/lab20_VoiceChanger/FPGADSP/video/q8.v:6]
+WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[9]
+WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[8]
+WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[7]
+WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[6]
+WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[5]
+WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[4]
+WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[3]
+WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[2]
+WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[1]
+WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (firh/\firControl0/nextstate_reg[2] )
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply3/P_reg[17]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply3/P_reg[16]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply4/P_reg[15]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply4/P_reg[14]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply5/P_reg[13]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply5/P_reg[12]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply6/P_reg[11]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply6/P_reg[10]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply3/P_reg[16]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply3/P_reg[15]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply4/P_reg[14]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply4/P_reg[13]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply5/P_reg[12]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply5/P_reg[11]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply6/P_reg[10]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply6/P_reg[9]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply2/P_reg[17]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply2/P_reg[16]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply3/P_reg[15]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply3/P_reg[14]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply4/P_reg[13]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply4/P_reg[12]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply5/P_reg[11]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply5/P_reg[10]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply2/P_reg[16]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply2/P_reg[15]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply3/P_reg[14]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply3/P_reg[13]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply4/P_reg[12]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply4/P_reg[11]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply5/P_reg[10]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply5/P_reg[9]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply1/P_reg[17]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply1/P_reg[16]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply2/P_reg[15]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply2/P_reg[14]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply3/P_reg[13]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply3/P_reg[12]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply4/P_reg[11]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply4/P_reg[10]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply1/P_reg[16]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply1/P_reg[15]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply2/P_reg[14]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply2/P_reg[13]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply3/P_reg[12]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply3/P_reg[11]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply4/P_reg[10]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply4/P_reg[9]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply0/P_reg[17]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply0/P_reg[16]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply1/P_reg[15]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply1/P_reg[14]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply2/P_reg[13]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply2/P_reg[12]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply3/P_reg[11]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply3/P_reg[10]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply0/P_reg[16]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply0/P_reg[15]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply1/P_reg[14]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply1/P_reg[13]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply2/P_reg[12]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply2/P_reg[11]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply3/P_reg[10]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply3/P_reg[9]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply0/P_reg[15]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply0/P_reg[14]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply1/P_reg[13]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply1/P_reg[12]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply2/P_reg[11]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply2/P_reg[10]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply0/P_reg[14]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply0/P_reg[13]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply1/P_reg[12]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply1/P_reg[11]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply2/P_reg[10]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply2/P_reg[9]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply0/P_reg[13]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply0/P_reg[12]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply1/P_reg[11]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply1/P_reg[10]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply0/P_reg[12]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply0/P_reg[11]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply1/P_reg[10]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply1/P_reg[9]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply0/P_reg[11]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply0/P_reg[10]'
+INFO: [Synth 8-3886] merging instance 'changevoice/smoothFilter/booth_multiplier0/subMultiply0/P_reg[10]' (LD) to 'changevoice/smoothFilter/booth_multiplier0/subMultiply0/P_reg[9]'
+WARNING: [Synth 8-3332] Sequential element (firControl0/nextstate_reg[2]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (firControl0/state_reg[2]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (smoothFilter/booth_multiplier0/subMultiply4/P_reg[17]) is unused and will be removed from module changevoice.
+WARNING: [Synth 8-3332] Sequential element (smoothFilter/booth_multiplier0/subMultiply4/P_reg[16]) is unused and will be removed from module changevoice.
+WARNING: [Synth 8-3332] Sequential element (smoothFilter/booth_multiplier0/subMultiply5/P_reg[17]) is unused and will be removed from module changevoice.
+WARNING: [Synth 8-3332] Sequential element (smoothFilter/booth_multiplier0/subMultiply5/P_reg[16]) is unused and will be removed from module changevoice.
+WARNING: [Synth 8-3332] Sequential element (smoothFilter/booth_multiplier0/subMultiply5/P_reg[15]) is unused and will be removed from module changevoice.
+WARNING: [Synth 8-3332] Sequential element (smoothFilter/booth_multiplier0/subMultiply5/P_reg[14]) is unused and will be removed from module changevoice.
+WARNING: [Synth 8-3332] Sequential element (smoothFilter/booth_multiplier0/subMultiply6/P_reg[17]) is unused and will be removed from module changevoice.
+WARNING: [Synth 8-3332] Sequential element (smoothFilter/booth_multiplier0/subMultiply6/P_reg[16]) is unused and will be removed from module changevoice.
+WARNING: [Synth 8-3332] Sequential element (smoothFilter/booth_multiplier0/subMultiply6/P_reg[15]) is unused and will be removed from module changevoice.
+WARNING: [Synth 8-3332] Sequential element (smoothFilter/booth_multiplier0/subMultiply6/P_reg[14]) is unused and will be removed from module changevoice.
+WARNING: [Synth 8-3332] Sequential element (smoothFilter/booth_multiplier0/subMultiply6/P_reg[13]) is unused and will be removed from module changevoice.
+WARNING: [Synth 8-3332] Sequential element (smoothFilter/booth_multiplier0/subMultiply6/P_reg[12]) is unused and will be removed from module changevoice.
+WARNING: [Synth 8-3332] Sequential element (smoothFilter/booth_multiplier0/subMultiply7/P_reg[17]) is unused and will be removed from module changevoice.
+WARNING: [Synth 8-3332] Sequential element (smoothFilter/booth_multiplier0/subMultiply7/P_reg[16]) is unused and will be removed from module changevoice.
+WARNING: [Synth 8-3332] Sequential element (smoothFilter/booth_multiplier0/subMultiply7/P_reg[15]) is unused and will be removed from module changevoice.
+WARNING: [Synth 8-3332] Sequential element (smoothFilter/booth_multiplier0/subMultiply7/P_reg[14]) is unused and will be removed from module changevoice.
+WARNING: [Synth 8-3332] Sequential element (smoothFilter/booth_multiplier0/subMultiply7/P_reg[13]) is unused and will be removed from module changevoice.
+WARNING: [Synth 8-3332] Sequential element (smoothFilter/booth_multiplier0/subMultiply7/P_reg[12]) is unused and will be removed from module changevoice.
+WARNING: [Synth 8-3332] Sequential element (smoothFilter/booth_multiplier0/subMultiply7/P_reg[11]) is unused and will be removed from module changevoice.
+WARNING: [Synth 8-3332] Sequential element (smoothFilter/booth_multiplier0/subMultiply7/P_reg[10]) is unused and will be removed from module changevoice.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply0/P_reg[17]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply0/P_reg[16]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply0/P_reg[15]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply0/P_reg[14]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply0/P_reg[13]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply0/P_reg[12]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply0/P_reg[11]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply0/P_reg[10]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply0/P_reg[9]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply0/P_reg[8]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply0/P_reg[7]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply0/P_reg[6]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply0/P_reg[5]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply0/P_reg[4]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply0/P_reg[3]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply0/P_reg[2]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply0/P_reg[1]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply0/P_reg[0]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply1/P_reg[17]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply1/P_reg[16]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply1/P_reg[15]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply1/P_reg[14]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply1/P_reg[13]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply1/P_reg[12]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply1/P_reg[11]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply1/P_reg[10]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply1/P_reg[9]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply1/P_reg[8]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply1/P_reg[7]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply1/P_reg[6]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply1/P_reg[5]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply1/P_reg[4]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply1/P_reg[3]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply1/P_reg[2]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply1/P_reg[1]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply1/P_reg[0]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply2/P_reg[17]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply2/P_reg[16]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply2/P_reg[15]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply2/P_reg[14]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply2/P_reg[13]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply2/P_reg[12]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply2/P_reg[11]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply2/P_reg[10]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply2/P_reg[9]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply2/P_reg[8]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply2/P_reg[7]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply2/P_reg[6]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply2/P_reg[5]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply2/P_reg[4]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply2/P_reg[3]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply2/P_reg[2]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply2/P_reg[1]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply2/P_reg[0]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply3/P_reg[17]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply3/P_reg[16]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply3/P_reg[15]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply3/P_reg[14]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply3/P_reg[13]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply3/P_reg[12]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply3/P_reg[11]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply3/P_reg[10]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply3/P_reg[9]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply3/P_reg[8]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply3/P_reg[7]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply3/P_reg[6]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply3/P_reg[5]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply3/P_reg[4]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply3/P_reg[3]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply3/P_reg[2]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply3/P_reg[1]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply3/P_reg[0]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply4/P_reg[17]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply4/P_reg[16]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply4/P_reg[15]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply4/P_reg[14]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply4/P_reg[13]) is unused and will be removed from module fir_H.
+WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply4/P_reg[12]) is unused and will be removed from module fir_H.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 776.766 ; gain = 532.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+--------------------+---------------+----------------+
+|Module Name | RTL Object         | Depth x Width | Implemented As | 
++------------+--------------------+---------------+----------------+
+|decoder5_16 | out                | 32x16         | LUT            | 
+|h_rom_h     | dout               | 32x16         | LUT            | 
+|h_rom_l     | dout               | 64x16         | LUT            | 
+|h_rom_l     | dout               | 64x16         | LUT            | 
+|fir_H       | h_rom_h1/dout      | 32x16         | LUT            | 
+|fir_L       | h_rom_l1/dout      | 64x16         | LUT            | 
+|fir_L       | h_rom_l1/dout      | 64x16         | LUT            | 
+|deal_voice  | de_coder/c1/d1/out | 32x16         | LUT            | 
++------------+--------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'DCM/clk_out1' to pin 'DCM/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'DCM/clk_out2' to pin 'DCM/bbstub_clk_out2/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 781.586 ; gain = 536.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:01 . Memory (MB): peak = 1032.766 ; gain = 788.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 1035.645 ; gain = 790.949
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1035.645 ; gain = 790.949
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1035.645 ; gain = 790.949
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1035.645 ; gain = 790.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1035.645 ; gain = 790.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1035.645 ; gain = 790.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1035.645 ; gain = 790.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |DCM_PLL       |         1|
+|2     |InOutBuffer   |         2|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |DCM_PLL        |     1|
+|2     |InOutBuffer    |     1|
+|3     |InOutBuffer__1 |     1|
+|4     |BUFG           |     2|
+|5     |CARRY4         |    13|
+|6     |LUT1           |    38|
+|7     |LUT2           |   117|
+|8     |LUT3           |   315|
+|9     |LUT4           |    84|
+|10    |LUT5           |   632|
+|11    |LUT6           |   793|
+|12    |MUXF7          |    75|
+|13    |FDRE           |   871|
+|14    |LD             |     3|
+|15    |IBUF           |     4|
+|16    |IOBUF          |     2|
+|17    |OBUF           |     4|
++------+---------------+------+
+
+Report Instance Areas: 
++------+------------------------+-------------------------+------+
+|      |Instance                |Module                   |Cells |
++------+------------------------+-------------------------+------+
+|1     |top                     |                         |  2988|
+|2     |  D1                    |dffre                    |     1|
+|3     |  D2                    |dffre_0                  |     2|
+|4     |  changevoice           |changevoice              |  1348|
+|5     |    Fir                 |fir_L                    |   501|
+|6     |      booth_multiplier0 |booth_multiplier_37      |   324|
+|7     |        subMultiply0    |subMultiply_40           |   324|
+|8     |      counterT          |counterT__parameterized0 |    93|
+|9     |      dffre32           |dffre__parameterized1_38 |    68|
+|10    |      dffre33           |dffre__parameterized0_39 |    16|
+|11    |    control             |control                  |    49|
+|12    |    counter2_1          |counterT__parameterized1 |    34|
+|13    |    counter2_2          |counterT__parameterized2 |    41|
+|14    |    inputaddr           |addrprocess              |   289|
+|15    |      Firaddr           |FirAddr                  |    31|
+|16    |      c1                |counterL_m               |   190|
+|17    |      c2                |counterL                 |    23|
+|18    |      c3                |counterL__parameterized0 |    29|
+|19    |      c4                |counterL__parameterized1 |    11|
+|20    |      d1                |dffre__parameterized2    |     5|
+|21    |    smoothFilter        |smoothFilter             |   418|
+|22    |      counter3          |counterT__parameterized3 |   303|
+|23    |      dffre0            |dffre__parameterized3    |    52|
+|24    |      dffre1            |dffre__parameterized0_36 |    16|
+|25    |      signalGenerate0   |signalGenerate           |     2|
+|26    |      smoothController0 |smoothController         |    29|
+|27    |  de_coder              |de_coder                 |   246|
+|28    |    c1                  |Com                      |    41|
+|29    |      c1                |Com_control              |     6|
+|30    |      counter           |counterT_35              |    35|
+|31    |    i1                  |I2C                      |    48|
+|32    |      div               |div_2                    |     2|
+|33    |      i1                |I2C_Control              |    37|
+|34    |      sub1              |sub                      |     8|
+|35    |    v1                  |video_top                |   157|
+|36    |      a5                |d                        |    24|
+|37    |      a6                |d_33                     |    40|
+|38    |      q_8               |q8                       |    29|
+|39    |      r1                |Register                 |    40|
+|40    |      r2                |Register_34              |    24|
+|41    |  firh                  |fir_H                    |  1374|
+|42    |    booth_multiplier0   |booth_multiplier         |     4|
+|43    |      subMultiply0      |subMultiply              |     4|
+|44    |    counterT            |counterT                 |   787|
+|45    |    dffre0              |dffre__parameterized0    |    16|
+|46    |    dffre1              |dffre__parameterized0_1  |    16|
+|47    |    dffre10             |dffre__parameterized0_2  |    16|
+|48    |    dffre11             |dffre__parameterized0_3  |    16|
+|49    |    dffre12             |dffre__parameterized0_4  |    16|
+|50    |    dffre13             |dffre__parameterized0_5  |    16|
+|51    |    dffre14             |dffre__parameterized0_6  |    16|
+|52    |    dffre15             |dffre__parameterized0_7  |    16|
+|53    |    dffre16             |dffre__parameterized0_8  |    16|
+|54    |    dffre17             |dffre__parameterized0_9  |    16|
+|55    |    dffre18             |dffre__parameterized0_10 |    16|
+|56    |    dffre19             |dffre__parameterized0_11 |    16|
+|57    |    dffre2              |dffre__parameterized0_12 |    16|
+|58    |    dffre20             |dffre__parameterized0_13 |    16|
+|59    |    dffre21             |dffre__parameterized0_14 |    16|
+|60    |    dffre22             |dffre__parameterized0_15 |    16|
+|61    |    dffre23             |dffre__parameterized0_16 |    16|
+|62    |    dffre24             |dffre__parameterized0_17 |    16|
+|63    |    dffre25             |dffre__parameterized0_18 |    16|
+|64    |    dffre26             |dffre__parameterized0_19 |    16|
+|65    |    dffre27             |dffre__parameterized0_20 |    16|
+|66    |    dffre28             |dffre__parameterized0_21 |    16|
+|67    |    dffre29             |dffre__parameterized0_22 |    16|
+|68    |    dffre3              |dffre__parameterized0_23 |    16|
+|69    |    dffre30             |dffre__parameterized0_24 |    16|
+|70    |    dffre31             |dffre__parameterized0_25 |    16|
+|71    |    dffre32             |dffre__parameterized1    |    47|
+|72    |    dffre33             |dffre__parameterized0_26 |    16|
+|73    |    dffre4              |dffre__parameterized0_27 |    16|
+|74    |    dffre5              |dffre__parameterized0_28 |    16|
+|75    |    dffre6              |dffre__parameterized0_29 |    16|
+|76    |    dffre7              |dffre__parameterized0_30 |    16|
+|77    |    dffre8              |dffre__parameterized0_31 |    16|
+|78    |    dffre9              |dffre__parameterized0_32 |    16|
+|79    |    firControl0         |firControl               |     8|
++------+------------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1035.645 ; gain = 790.949
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 416 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 1035.645 ; gain = 434.793
+Synthesis Optimization Complete : Time (s): cpu = 00:01:04 ; elapsed = 00:01:05 . Memory (MB): peak = 1035.645 ; gain = 790.949
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  LD => LDCE: 3 instances
+
+189 Infos, 143 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 1035.645 ; gain = 800.445
+INFO: [Common 17-1381] The checkpoint 'F:/lab20_VoiceChanger/vivado/voicechange/voicechange.runs/synth_1/deal_voice.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1035.645 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 17 16:37:12 2018...
