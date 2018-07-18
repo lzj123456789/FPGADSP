@@ -1,12 +1,12 @@
 module de_coder(audio_clk, reset, LeftPlayData, RightPlayData, 
 LeftRecData, RightRecData, DAC_SDATA, ADC_SDATA, MCLK, BCLK, LRCLK, NewFrame, SDA, SCL, error);
     input audio_clk, reset, ADC_SDATA;
-    input [15:0] LeftPlayData, RightPlayData;
-    output [15:0] LeftRecData, RightRecData;
+    input [23:0] LeftPlayData, RightPlayData;
+    output [23:0] LeftRecData, RightRecData;
     output DAC_SDATA, MCLK, BCLK, LRCLK, NewFrame, error;
     inout SDA, SCL;
     
-    video_top #(.N(16)) 
+    video_top #(.N(24)) 
        v1(.audio_clk(audio_clk),
        .LeftPlayData(LeftPlayData),
        .RightPlayData(RightPlayData),
