@@ -2,17 +2,22 @@ module I2C_Control(reset, write, I2C_clk, sel, SclEn, ready, errory, SetCountMax
     input reset, write, I2C_clk, SDA, SCL, LastData;
     output SclEn, ready, errory, SetCountMax;
     output [2:0]sel;
-    parameter IDLE=0, Start=1, Startbit=2, AddrWR=3, AckAddrWR=4, SubAddrHWR=5, AckAddrHWR=6, 
-              SubAddrLWR=7, AckAddrLWR=8, DataWR=9, AckDataWR=10, Stop=11, Ready=12, Err=13;
-    reg [3:0] state;
+    parameter  IDLE=4'b0000, Start=4'b0001, Startbit=4'b0010, 
+               AddrWR=4'b0011, AckAddrWR=4'b0100, SubAddrHWR=4'b0101, 
+               AckAddrHWR=4'b0110, SubAddrLWR=4'b0111, AckAddrLWR=4'b1000, 
+               DataWR=4'b1001, AckDataWR=4'b1010, Stop=4'b1011, 
+               Ready=4'b1100, Err=4'b1101;
+    reg [3:0] state;      
     reg [3:0] n_state;
     reg SclEn, ready, errory, SetCountMax;
     reg [2:0] sel;
-    
     always@(posedge I2C_clk)
         begin
             if(reset) state=IDLE;
             else state=n_state;
+		  end
+    always@(*)
+        begin
 		   case(state)
 			IDLE:
 				begin
@@ -130,7 +135,7 @@ module I2C_Control(reset, write, I2C_clk, sel, SclEn, ready, errory, SetCountMax
 					ready = 1; errory = 0;
 					n_state <= IDLE;
 				end
-			Err:
+			default:
 				begin
 					sel = 0; SclEn = 0; SetCountMax = 0;
 					ready = 0; errory = 1;
