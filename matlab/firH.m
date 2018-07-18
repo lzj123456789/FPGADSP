@@ -3,7 +3,7 @@ clc;clear; close all;
 n = 0:100;
 
 % data=(int)	  ( (0.5*sin(3.1415926*i/30)+ sin(3.1415926*i/10 ) )/1.5*127);	    data &=0x0000ffff;//16bit
-data = ((0.5*sin(pi*n/30))+sin(pi*n/10))/1.5*127;
+data = ((0.5*sin(pi*n/12))+sin(pi*n/4))/1.5*127;
 figure(1);
 subplot(311);
 plot(n,data);
@@ -14,7 +14,7 @@ ylabel('x(n)');
 
 %%
 N = 32;
-omega_c = 200/4800*2*pi;
+omega_c = 400/4800*2*pi;
 n = 0:N-1;
 tau = (N-1)/2;
 %h_d(n)
@@ -41,4 +41,8 @@ axis([0 N-1 min(h)-0.2 max(h)+0.2]);
  plot(C);
  xlabel('n');ylabel('x*h');
  title('After Filter');
+ 
+ 
+ %%
+ 
  
