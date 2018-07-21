@@ -1,7 +1,6 @@
-module	changevoice(SampleIn,ready,clk,RisingTone,reset,SampleOut,SampleCount);
+module	changevoice(SampleIn,ready,clk,RisingTone,reset,SampleOut);
 	input [15:0] SampleIn;
 	input ready,clk,reset,RisingTone;
-	output [9:0] SampleCount;
 	output [15:0] SampleOut;
 	wire InCopy,OutBufWea,FirStart,FirOe,InCopyEnd,
 		ProcessStart,FirEnd,ProcessEnd;
