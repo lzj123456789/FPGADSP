@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="InOutBuffer_synth_1" LaunchPart="xc7a200tfbg484-1" LaunchTime="1532138710">
+<GenRun Id="InOutBuffer_synth_1" LaunchPart="xc7a200tfbg484-1" LaunchTime="1532141350">
   <File Type="RDS-PROPCONSTRS" Name="InOutBuffer_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="InOutBuffer.tcl"/>
   <File Type="RDS-RDS" Name="InOutBuffer.vds"/>

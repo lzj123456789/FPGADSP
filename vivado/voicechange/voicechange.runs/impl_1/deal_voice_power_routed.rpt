@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-| Date             : Sat Jul 21 10:16:18 2018
-| Host             : Admin-pc running 64-bit Service Pack 1  (build 7601)
+| Date             : Sat Jul 21 10:53:33 2018
+| Host             : DESKTOP-KL6M9RO running 64-bit major release  (build 9200)
 | Command          : report_power -file deal_voice_power_routed.rpt -pb deal_voice_power_summary_routed.pb -rpx deal_voice_power_routed.rpx
 | Design           : deal_voice
 | Device           : xc7a200tfbg484-1
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.244 |
-| Dynamic (W)              | 0.106 |
+| Total On-Chip Power (W)  | 0.248 |
+| Dynamic (W)              | 0.109 |
 | Device Static (W)        | 0.139 |
 | Effective TJA (C/W)      | 2.5   |
 | Max Ambient (C)          | 84.4  |
@@ -50,19 +50,19 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.002 |        6 |       --- |             --- |
-| Slice Logic              |     0.004 |     3897 |       --- |             --- |
-|   LUT as Logic           |     0.003 |     1706 |    133800 |            1.28 |
+| Slice Logic              |     0.004 |     3984 |       --- |             --- |
+|   LUT as Logic           |     0.003 |     1752 |    133800 |            1.31 |
 |   LUT as Distributed RAM |    <0.001 |      704 |     46200 |            1.52 |
-|   Register               |    <0.001 |      884 |    267600 |            0.33 |
-|   F7/F8 Muxes            |    <0.001 |      163 |    133800 |            0.12 |
+|   Register               |    <0.001 |      904 |    267600 |            0.34 |
+|   F7/F8 Muxes            |    <0.001 |      169 |    133800 |            0.13 |
 |   CARRY4                 |    <0.001 |       13 |     33450 |            0.04 |
 |   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
-|   Others                 |     0.000 |       76 |       --- |             --- |
-| Signals                  |     0.004 |     3084 |       --- |             --- |
+|   Others                 |     0.000 |       84 |       --- |             --- |
+| Signals                  |     0.003 |     3145 |       --- |             --- |
 | PLL                      |     0.095 |        1 |        10 |           10.00 |
-| I/O                      |     0.002 |       11 |       285 |            3.86 |
+| I/O                      |     0.006 |       11 |       285 |            3.86 |
 | Static Power             |     0.139 |          |           |                 |
-| Total                    |     0.244 |          |           |                 |
+| Total                    |     0.248 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,8 +73,8 @@ Table of Contents
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
 | Vccint    |       1.000 |     0.046 |       0.016 |      0.031 |
-| Vccaux    |       1.800 |     0.079 |       0.049 |      0.031 |
-| Vcco33    |       3.300 |     0.006 |       0.001 |      0.005 |
+| Vccaux    |       1.800 |     0.080 |       0.049 |      0.031 |
+| Vcco33    |       3.300 |     0.007 |       0.002 |      0.005 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -144,14 +144,14 @@ Table of Contents
 +---------------------------------------+-----------+
 | Name                                  | Power (W) |
 +---------------------------------------+-----------+
-| deal_voice                            |     0.106 |
+| deal_voice                            |     0.109 |
 |   D1                                  |    <0.001 |
 |   D2                                  |    <0.001 |
 |   DCM                                 |     0.095 |
 |     inst                              |     0.095 |
-|   SCL_IOBUF_inst                      |     0.000 |
+|   SCL_IOBUF_inst                      |     0.004 |
 |   SDA_IOBUF_inst                      |     0.000 |
-|   changevoice                         |     0.008 |
+|   changevoice                         |     0.007 |
 |     Fir                               |     0.003 |
 |       booth_multiplier0               |     0.002 |
 |         subMultiply0                  |     0.002 |
@@ -375,12 +375,16 @@ Table of Contents
 |       signalGenerate0                 |    <0.001 |
 |       smoothController0               |    <0.001 |
 |   de_coder                            |    <0.001 |
-|     i1                                |     0.000 |
-|       div                             |     0.000 |
-|       i1                              |     0.000 |
+|     c1                                |    <0.001 |
+|       c1                              |    <0.001 |
+|       counter                         |    <0.001 |
+|     i1                                |    <0.001 |
+|       div                             |    <0.001 |
+|       i1                              |    <0.001 |
+|       sub1                            |    <0.001 |
 |     v1                                |    <0.001 |
-|       a5                              |    <0.001 |
-|       a6                              |    <0.001 |
+|       d1                              |    <0.001 |
+|       d2                              |    <0.001 |
 |       q_8                             |    <0.001 |
 |       r1                              |    <0.001 |
 |       r2                              |    <0.001 |

@@ -41,7 +41,7 @@ module deal_voice(clk, reset, ADC_SDATA, ChangeEn, RisingTone,
 	dffre #(.WIDTH(1)) D2(.d(temp), .clk(sys_clk), .r(reset), .q(ready), .en(1'b1));
 
 	
-	fir_H firh(.sample(ready),.xIn(RightRecData[23:8]),.clk(sys_clk),.yOut(Sampletemp));
+	fir_H firh(.sample(ready),.xIn(RightRecData[23:8]),.clk(sys_clk),.yOut(Sampletemp),.reset(reset));
 	
 	changevoice changevoice(.SampleIn(RisingTone?Sampletemp:RightRecData[23:8]),.ready(ready),.clk(sys_clk),
 	  .RisingTone(RisingTone),.reset(reset),.SampleOut(SampleOut),.SampleCount());

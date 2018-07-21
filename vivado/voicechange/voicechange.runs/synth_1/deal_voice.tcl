@@ -8,61 +8,61 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir F:/FPGADSP/vivado/voicechange/voicechange.cache/wt [current_project]
-set_property parent.project_path F:/FPGADSP/vivado/voicechange/voicechange.xpr [current_project]
+set_property webtalk.parent_dir D:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.cache/wt [current_project]
+set_property parent.project_path D:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo f:/FPGADSP/vivado/voicechange/voicechange.cache/ip [current_project]
+set_property ip_output_repo d:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  F:/FPGADSP/FPGADSP/Com/Com.v
-  F:/FPGADSP/FPGADSP/Com/Com_control.v
-  F:/FPGADSP/FPGADSP/inputbuf/FirAddr.v
-  F:/FPGADSP/FPGADSP/I2C/I2C.v
-  F:/FPGADSP/FPGADSP/I2C/I2C_Control.v
-  F:/FPGADSP/FPGADSP/Naddr.v
-  F:/FPGADSP/FPGADSP/video/Register.v
-  F:/FPGADSP/FPGADSP/SelTWtoO.v
-  F:/FPGADSP/FPGADSP/inputbuf/addrprocess.v
-  F:/FPGADSP/FPGADSP/boothEncode.v
-  F:/FPGADSP/FPGADSP/booth_multiplier.v
-  F:/FPGADSP/FPGADSP/changevoice.v
-  F:/FPGADSP/FPGADSP/control.v
-  F:/FPGADSP/FPGADSP/inputbuf/counerL_m.v
-  F:/FPGADSP/FPGADSP/inputbuf/counterL.v
-  F:/FPGADSP/FPGADSP/counterT.v
-  F:/FPGADSP/FPGADSP/video/d.v
-  F:/FPGADSP/FPGADSP/de_coder.v
-  F:/FPGADSP/FPGADSP/Com/decoder5_16.v
-  F:/FPGADSP/FPGADSP/inputbuf/dffre.v
-  F:/FPGADSP/FPGADSP/I2C/div_2.v
-  F:/FPGADSP/FPGADSP/fir.v
-  F:/FPGADSP/FPGADSP/firControl.v
-  F:/FPGADSP/FPGADSP/fir_H.v
-  F:/FPGADSP/FPGADSP/inputbuf/full_adder.v
-  F:/FPGADSP/FPGADSP/h_rom_h.v
-  F:/FPGADSP/FPGADSP/h_rom_l.v
-  F:/FPGADSP/FPGADSP/video/produce.v
-  F:/FPGADSP/FPGADSP/video/q8.v
-  F:/FPGADSP/FPGADSP/signalGenerate.v
-  F:/FPGADSP/FPGADSP/smoothController.v
-  F:/FPGADSP/FPGADSP/smoothFilter.v
-  F:/FPGADSP/FPGADSP/I2C/sub.v
-  F:/FPGADSP/FPGADSP/subMultiply.v
-  F:/FPGADSP/FPGADSP/subSum.v
-  F:/FPGADSP/FPGADSP/video/video_top.v
-  F:/FPGADSP/FPGADSP/deal_voice.v
+  D:/resource/study/lab20/FPGADSP/src/Com/Com.v
+  D:/resource/study/lab20/FPGADSP/src/Com/Com_control.v
+  D:/resource/study/lab20/FPGADSP/src/inputbuf/FirAddr.v
+  D:/resource/study/lab20/FPGADSP/src/I2C/I2C.v
+  D:/resource/study/lab20/FPGADSP/src/I2C/I2C_Control.v
+  D:/resource/study/lab20/FPGADSP/src/Naddr.v
+  D:/resource/study/lab20/FPGADSP/src/video/Register.v
+  D:/resource/study/lab20/FPGADSP/src/SelTWtoO.v
+  D:/resource/study/lab20/FPGADSP/src/inputbuf/addrprocess.v
+  D:/resource/study/lab20/FPGADSP/src/boothEncode.v
+  D:/resource/study/lab20/FPGADSP/src/booth_multiplier.v
+  D:/resource/study/lab20/FPGADSP/src/changevoice.v
+  D:/resource/study/lab20/FPGADSP/src/control.v
+  D:/resource/study/lab20/FPGADSP/src/inputbuf/counerL_m.v
+  D:/resource/study/lab20/FPGADSP/src/inputbuf/counterL.v
+  D:/resource/study/lab20/FPGADSP/src/counterT.v
+  D:/resource/study/lab20/FPGADSP/src/video/d.v
+  D:/resource/study/lab20/FPGADSP/src/de_coder.v
+  D:/resource/study/lab20/FPGADSP/src/Com/decoder5_16.v
+  D:/resource/study/lab20/FPGADSP/src/inputbuf/dffre.v
+  D:/resource/study/lab20/FPGADSP/src/I2C/div_2.v
+  D:/resource/study/lab20/FPGADSP/src/fir.v
+  D:/resource/study/lab20/FPGADSP/src/firControl.v
+  D:/resource/study/lab20/FPGADSP/src/fir_H.v
+  D:/resource/study/lab20/FPGADSP/src/inputbuf/full_adder.v
+  D:/resource/study/lab20/FPGADSP/src/h_rom_h.v
+  D:/resource/study/lab20/FPGADSP/src/h_rom_l.v
+  D:/resource/study/lab20/FPGADSP/src/video/produce.v
+  D:/resource/study/lab20/FPGADSP/src/video/q8.v
+  D:/resource/study/lab20/FPGADSP/src/signalGenerate.v
+  D:/resource/study/lab20/FPGADSP/src/smoothController.v
+  D:/resource/study/lab20/FPGADSP/src/smoothFilter.v
+  D:/resource/study/lab20/FPGADSP/src/I2C/sub.v
+  D:/resource/study/lab20/FPGADSP/src/subMultiply.v
+  D:/resource/study/lab20/FPGADSP/src/subSum.v
+  D:/resource/study/lab20/FPGADSP/src/video/video_top.v
+  D:/resource/study/lab20/FPGADSP/src/deal_voice.v
 }
-read_ip -quiet F:/FPGADSP/vivado/voicechange/voicechange.srcs/sources_1/ip/DCM_PLL/DCM_PLL.xci
-set_property used_in_implementation false [get_files -all f:/FPGADSP/vivado/voicechange/voicechange.srcs/sources_1/ip/DCM_PLL/DCM_PLL_board.xdc]
-set_property used_in_implementation false [get_files -all f:/FPGADSP/vivado/voicechange/voicechange.srcs/sources_1/ip/DCM_PLL/DCM_PLL.xdc]
-set_property used_in_implementation false [get_files -all f:/FPGADSP/vivado/voicechange/voicechange.srcs/sources_1/ip/DCM_PLL/DCM_PLL_ooc.xdc]
-set_property is_locked true [get_files F:/FPGADSP/vivado/voicechange/voicechange.srcs/sources_1/ip/DCM_PLL/DCM_PLL.xci]
+read_ip -quiet D:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.srcs/sources_1/ip/DCM_PLL/DCM_PLL.xci
+set_property used_in_implementation false [get_files -all d:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.srcs/sources_1/ip/DCM_PLL/DCM_PLL_board.xdc]
+set_property used_in_implementation false [get_files -all d:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.srcs/sources_1/ip/DCM_PLL/DCM_PLL.xdc]
+set_property used_in_implementation false [get_files -all d:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.srcs/sources_1/ip/DCM_PLL/DCM_PLL_ooc.xdc]
+set_property is_locked true [get_files D:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.srcs/sources_1/ip/DCM_PLL/DCM_PLL.xci]
 
-read_ip -quiet F:/FPGADSP/vivado/voicechange/voicechange.srcs/sources_1/ip/InOutBuffer/InOutBuffer.xci
-set_property used_in_implementation false [get_files -all f:/FPGADSP/vivado/voicechange/voicechange.srcs/sources_1/ip/InOutBuffer/InOutBuffer_ooc.xdc]
-set_property is_locked true [get_files F:/FPGADSP/vivado/voicechange/voicechange.srcs/sources_1/ip/InOutBuffer/InOutBuffer.xci]
+read_ip -quiet D:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.srcs/sources_1/ip/InOutBuffer/InOutBuffer.xci
+set_property used_in_implementation false [get_files -all d:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.srcs/sources_1/ip/InOutBuffer/InOutBuffer_ooc.xdc]
+set_property is_locked true [get_files D:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.srcs/sources_1/ip/InOutBuffer/InOutBuffer.xci]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -72,8 +72,8 @@ set_property is_locked true [get_files F:/FPGADSP/vivado/voicechange/voicechange
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc F:/FPGADSP/vivado/voicechange/voicechange.srcs/constrs_1/new/DEALVOICE.xdc
-set_property used_in_implementation false [get_files F:/FPGADSP/vivado/voicechange/voicechange.srcs/constrs_1/new/DEALVOICE.xdc]
+read_xdc D:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.srcs/constrs_1/new/DEALVOICE.xdc
+set_property used_in_implementation false [get_files D:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.srcs/constrs_1/new/DEALVOICE.xdc]
 
 
 synth_design -top deal_voice -part xc7a200tfbg484-1

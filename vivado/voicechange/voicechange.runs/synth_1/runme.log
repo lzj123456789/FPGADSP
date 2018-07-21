@@ -14,44 +14,44 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t-fbg484'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t-fbg484'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5828 
+INFO: Helper process launched with PID 3076 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 318.559 ; gain = 75.098
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 317.461 ; gain = 74.816
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'deal_voice' [F:/FPGADSP/FPGADSP/deal_voice.v:1]
-INFO: [Synth 8-638] synthesizing module 'DCM_PLL' [F:/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-7216-Admin-pc/realtime/DCM_PLL_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'DCM_PLL' (1#1) [F:/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-7216-Admin-pc/realtime/DCM_PLL_stub.v:5]
-INFO: [Synth 8-638] synthesizing module 'de_coder' [F:/FPGADSP/FPGADSP/de_coder.v:1]
-INFO: [Synth 8-638] synthesizing module 'video_top' [F:/FPGADSP/FPGADSP/video/video_top.v:1]
+INFO: [Synth 8-638] synthesizing module 'deal_voice' [D:/resource/study/lab20/FPGADSP/src/deal_voice.v:1]
+INFO: [Synth 8-638] synthesizing module 'DCM_PLL' [D:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-8544-DESKTOP-KL6M9RO/realtime/DCM_PLL_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'DCM_PLL' (1#1) [D:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-8544-DESKTOP-KL6M9RO/realtime/DCM_PLL_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'de_coder' [D:/resource/study/lab20/FPGADSP/src/de_coder.v:1]
+INFO: [Synth 8-638] synthesizing module 'video_top' [D:/resource/study/lab20/FPGADSP/src/video/video_top.v:1]
 	Parameter N bound to: 24 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'q8' [F:/FPGADSP/FPGADSP/video/q8.v:1]
+INFO: [Synth 8-638] synthesizing module 'q8' [D:/resource/study/lab20/FPGADSP/src/video/q8.v:1]
 	Parameter N bound to: 8 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'q8' (2#1) [F:/FPGADSP/FPGADSP/video/q8.v:1]
-INFO: [Synth 8-638] synthesizing module 'Produce' [F:/FPGADSP/FPGADSP/video/produce.v:1]
-INFO: [Synth 8-256] done synthesizing module 'Produce' (3#1) [F:/FPGADSP/FPGADSP/video/produce.v:1]
-INFO: [Synth 8-638] synthesizing module 'Register' [F:/FPGADSP/FPGADSP/video/Register.v:1]
+INFO: [Synth 8-256] done synthesizing module 'q8' (2#1) [D:/resource/study/lab20/FPGADSP/src/video/q8.v:1]
+INFO: [Synth 8-638] synthesizing module 'Produce' [D:/resource/study/lab20/FPGADSP/src/video/produce.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Produce' (3#1) [D:/resource/study/lab20/FPGADSP/src/video/produce.v:1]
+INFO: [Synth 8-638] synthesizing module 'Register' [D:/resource/study/lab20/FPGADSP/src/video/Register.v:1]
 	Parameter N bound to: 24 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Register' (4#1) [F:/FPGADSP/FPGADSP/video/Register.v:1]
-INFO: [Synth 8-638] synthesizing module 'd' [F:/FPGADSP/FPGADSP/video/d.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Register' (4#1) [D:/resource/study/lab20/FPGADSP/src/video/Register.v:1]
+INFO: [Synth 8-638] synthesizing module 'd' [D:/resource/study/lab20/FPGADSP/src/video/d.v:1]
 	Parameter N bound to: 24 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'd' (5#1) [F:/FPGADSP/FPGADSP/video/d.v:1]
-INFO: [Synth 8-256] done synthesizing module 'video_top' (6#1) [F:/FPGADSP/FPGADSP/video/video_top.v:1]
-INFO: [Synth 8-638] synthesizing module 'Com' [F:/FPGADSP/FPGADSP/Com/Com.v:1]
-INFO: [Synth 8-638] synthesizing module 'counterT' [F:/FPGADSP/FPGADSP/counterT.v:1]
+INFO: [Synth 8-256] done synthesizing module 'd' (5#1) [D:/resource/study/lab20/FPGADSP/src/video/d.v:1]
+INFO: [Synth 8-256] done synthesizing module 'video_top' (6#1) [D:/resource/study/lab20/FPGADSP/src/video/video_top.v:1]
+INFO: [Synth 8-638] synthesizing module 'Com' [D:/resource/study/lab20/FPGADSP/src/Com/Com.v:1]
+INFO: [Synth 8-638] synthesizing module 'counterT' [D:/resource/study/lab20/FPGADSP/src/counterT.v:1]
 	Parameter n bound to: 32 - type: integer 
 	Parameter counter_bits bound to: 5 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'counterT' (7#1) [F:/FPGADSP/FPGADSP/counterT.v:1]
-INFO: [Synth 8-638] synthesizing module 'Com_control' [F:/FPGADSP/FPGADSP/Com/Com_control.v:1]
+INFO: [Synth 8-256] done synthesizing module 'counterT' (7#1) [D:/resource/study/lab20/FPGADSP/src/counterT.v:1]
+INFO: [Synth 8-638] synthesizing module 'Com_control' [D:/resource/study/lab20/FPGADSP/src/Com/Com_control.v:1]
 	Parameter Comreset bound to: 0 - type: integer 
 	Parameter ComWrite bound to: 1 - type: integer 
 	Parameter ComWait bound to: 2 - type: integer 
 	Parameter ComStop bound to: 3 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Com_control' (8#1) [F:/FPGADSP/FPGADSP/Com/Com_control.v:1]
-INFO: [Synth 8-638] synthesizing module 'decoder5_16' [F:/FPGADSP/FPGADSP/Com/decoder5_16.v:1]
-INFO: [Synth 8-256] done synthesizing module 'decoder5_16' (9#1) [F:/FPGADSP/FPGADSP/Com/decoder5_16.v:1]
-INFO: [Synth 8-256] done synthesizing module 'Com' (10#1) [F:/FPGADSP/FPGADSP/Com/Com.v:1]
-INFO: [Synth 8-638] synthesizing module 'I2C' [F:/FPGADSP/FPGADSP/I2C/I2C.v:1]
-INFO: [Synth 8-638] synthesizing module 'I2C_Control' [F:/FPGADSP/FPGADSP/I2C/I2C_Control.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Com_control' (8#1) [D:/resource/study/lab20/FPGADSP/src/Com/Com_control.v:1]
+INFO: [Synth 8-638] synthesizing module 'decoder5_16' [D:/resource/study/lab20/FPGADSP/src/Com/decoder5_16.v:1]
+INFO: [Synth 8-256] done synthesizing module 'decoder5_16' (9#1) [D:/resource/study/lab20/FPGADSP/src/Com/decoder5_16.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Com' (10#1) [D:/resource/study/lab20/FPGADSP/src/Com/Com.v:1]
+INFO: [Synth 8-638] synthesizing module 'I2C' [D:/resource/study/lab20/FPGADSP/src/I2C/I2C.v:1]
+INFO: [Synth 8-638] synthesizing module 'I2C_Control' [D:/resource/study/lab20/FPGADSP/src/I2C/I2C_Control.v:1]
 	Parameter IDLE bound to: 4'b0000 
 	Parameter Start bound to: 4'b0001 
 	Parameter Startbit bound to: 4'b0010 
@@ -66,102 +66,101 @@ INFO: [Synth 8-638] synthesizing module 'I2C_Control' [F:/FPGADSP/FPGADSP/I2C/I2
 	Parameter Stop bound to: 4'b1011 
 	Parameter Ready bound to: 4'b1100 
 	Parameter Err bound to: 4'b1101 
-INFO: [Synth 8-256] done synthesizing module 'I2C_Control' (11#1) [F:/FPGADSP/FPGADSP/I2C/I2C_Control.v:1]
-INFO: [Synth 8-638] synthesizing module 'sub' [F:/FPGADSP/FPGADSP/I2C/sub.v:1]
-INFO: [Synth 8-256] done synthesizing module 'sub' (12#1) [F:/FPGADSP/FPGADSP/I2C/sub.v:1]
-INFO: [Synth 8-155] case statement is not full and has no default [F:/FPGADSP/FPGADSP/I2C/I2C.v:19]
-INFO: [Synth 8-638] synthesizing module 'div_2' [F:/FPGADSP/FPGADSP/I2C/div_2.v:1]
-INFO: [Synth 8-256] done synthesizing module 'div_2' (13#1) [F:/FPGADSP/FPGADSP/I2C/div_2.v:1]
-INFO: [Synth 8-256] done synthesizing module 'I2C' (14#1) [F:/FPGADSP/FPGADSP/I2C/I2C.v:1]
-WARNING: [Synth 8-3848] Net I1C_clk in module/entity de_coder does not have driver. [F:/FPGADSP/FPGADSP/de_coder.v:39]
-INFO: [Synth 8-256] done synthesizing module 'de_coder' (15#1) [F:/FPGADSP/FPGADSP/de_coder.v:1]
-INFO: [Synth 8-638] synthesizing module 'dffre' [F:/FPGADSP/FPGADSP/inputbuf/dffre.v:1]
+INFO: [Synth 8-256] done synthesizing module 'I2C_Control' (11#1) [D:/resource/study/lab20/FPGADSP/src/I2C/I2C_Control.v:1]
+INFO: [Synth 8-638] synthesizing module 'sub' [D:/resource/study/lab20/FPGADSP/src/I2C/sub.v:1]
+INFO: [Synth 8-256] done synthesizing module 'sub' (12#1) [D:/resource/study/lab20/FPGADSP/src/I2C/sub.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/resource/study/lab20/FPGADSP/src/I2C/I2C.v:20]
+INFO: [Synth 8-638] synthesizing module 'div_2' [D:/resource/study/lab20/FPGADSP/src/I2C/div_2.v:1]
+INFO: [Synth 8-256] done synthesizing module 'div_2' (13#1) [D:/resource/study/lab20/FPGADSP/src/I2C/div_2.v:1]
+INFO: [Synth 8-256] done synthesizing module 'I2C' (14#1) [D:/resource/study/lab20/FPGADSP/src/I2C/I2C.v:1]
+INFO: [Synth 8-256] done synthesizing module 'de_coder' (15#1) [D:/resource/study/lab20/FPGADSP/src/de_coder.v:1]
+INFO: [Synth 8-638] synthesizing module 'dffre' [D:/resource/study/lab20/FPGADSP/src/inputbuf/dffre.v:1]
 	Parameter WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'dffre' (16#1) [F:/FPGADSP/FPGADSP/inputbuf/dffre.v:1]
-INFO: [Synth 8-638] synthesizing module 'fir_H' [F:/FPGADSP/FPGADSP/fir_H.v:1]
-INFO: [Synth 8-638] synthesizing module 'firControl' [F:/FPGADSP/FPGADSP/firControl.v:1]
+INFO: [Synth 8-256] done synthesizing module 'dffre' (16#1) [D:/resource/study/lab20/FPGADSP/src/inputbuf/dffre.v:1]
+INFO: [Synth 8-638] synthesizing module 'fir_H' [D:/resource/study/lab20/FPGADSP/src/fir_H.v:1]
+INFO: [Synth 8-638] synthesizing module 'firControl' [D:/resource/study/lab20/FPGADSP/src/firControl.v:1]
 	Parameter RESET bound to: 0 - type: integer 
 	Parameter MAC bound to: 1 - type: integer 
 	Parameter DATAOUT bound to: 2 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [F:/FPGADSP/FPGADSP/firControl.v:12]
-INFO: [Synth 8-256] done synthesizing module 'firControl' (17#1) [F:/FPGADSP/FPGADSP/firControl.v:1]
-INFO: [Synth 8-638] synthesizing module 'dffre__parameterized0' [F:/FPGADSP/FPGADSP/inputbuf/dffre.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/resource/study/lab20/FPGADSP/src/firControl.v:12]
+INFO: [Synth 8-256] done synthesizing module 'firControl' (17#1) [D:/resource/study/lab20/FPGADSP/src/firControl.v:1]
+INFO: [Synth 8-638] synthesizing module 'dffre__parameterized0' [D:/resource/study/lab20/FPGADSP/src/inputbuf/dffre.v:1]
 	Parameter WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'dffre__parameterized0' (17#1) [F:/FPGADSP/FPGADSP/inputbuf/dffre.v:1]
-INFO: [Synth 8-638] synthesizing module 'SelTWtoO' [F:/FPGADSP/FPGADSP/SelTWtoO.v:1]
-INFO: [Synth 8-256] done synthesizing module 'SelTWtoO' (18#1) [F:/FPGADSP/FPGADSP/SelTWtoO.v:1]
-INFO: [Synth 8-638] synthesizing module 'h_rom_h' [F:/FPGADSP/FPGADSP/h_rom_h.v:1]
-INFO: [Synth 8-256] done synthesizing module 'h_rom_h' (19#1) [F:/FPGADSP/FPGADSP/h_rom_h.v:1]
-INFO: [Synth 8-638] synthesizing module 'booth_multiplier' [F:/FPGADSP/FPGADSP/booth_multiplier.v:3]
-INFO: [Synth 8-638] synthesizing module 'boothEncode' [F:/FPGADSP/FPGADSP/boothEncode.v:2]
-INFO: [Synth 8-256] done synthesizing module 'boothEncode' (20#1) [F:/FPGADSP/FPGADSP/boothEncode.v:2]
-INFO: [Synth 8-638] synthesizing module 'subMultiply' [F:/FPGADSP/FPGADSP/subMultiply.v:2]
-INFO: [Synth 8-155] case statement is not full and has no default [F:/FPGADSP/FPGADSP/subMultiply.v:9]
-INFO: [Synth 8-256] done synthesizing module 'subMultiply' (21#1) [F:/FPGADSP/FPGADSP/subMultiply.v:2]
-INFO: [Synth 8-638] synthesizing module 'subSum' [F:/FPGADSP/FPGADSP/subSum.v:2]
-INFO: [Synth 8-638] synthesizing module 'Naddr' [F:/FPGADSP/FPGADSP/Naddr.v:2]
+INFO: [Synth 8-256] done synthesizing module 'dffre__parameterized0' (17#1) [D:/resource/study/lab20/FPGADSP/src/inputbuf/dffre.v:1]
+INFO: [Synth 8-638] synthesizing module 'SelTWtoO' [D:/resource/study/lab20/FPGADSP/src/SelTWtoO.v:1]
+INFO: [Synth 8-256] done synthesizing module 'SelTWtoO' (18#1) [D:/resource/study/lab20/FPGADSP/src/SelTWtoO.v:1]
+INFO: [Synth 8-638] synthesizing module 'h_rom_h' [D:/resource/study/lab20/FPGADSP/src/h_rom_h.v:1]
+INFO: [Synth 8-256] done synthesizing module 'h_rom_h' (19#1) [D:/resource/study/lab20/FPGADSP/src/h_rom_h.v:1]
+INFO: [Synth 8-638] synthesizing module 'booth_multiplier' [D:/resource/study/lab20/FPGADSP/src/booth_multiplier.v:3]
+INFO: [Synth 8-638] synthesizing module 'boothEncode' [D:/resource/study/lab20/FPGADSP/src/boothEncode.v:2]
+INFO: [Synth 8-256] done synthesizing module 'boothEncode' (20#1) [D:/resource/study/lab20/FPGADSP/src/boothEncode.v:2]
+INFO: [Synth 8-638] synthesizing module 'subMultiply' [D:/resource/study/lab20/FPGADSP/src/subMultiply.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/resource/study/lab20/FPGADSP/src/subMultiply.v:9]
+INFO: [Synth 8-256] done synthesizing module 'subMultiply' (21#1) [D:/resource/study/lab20/FPGADSP/src/subMultiply.v:2]
+INFO: [Synth 8-638] synthesizing module 'subSum' [D:/resource/study/lab20/FPGADSP/src/subSum.v:2]
+INFO: [Synth 8-638] synthesizing module 'Naddr' [D:/resource/study/lab20/FPGADSP/src/Naddr.v:2]
 	Parameter N bound to: 20 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Naddr' (22#1) [F:/FPGADSP/FPGADSP/Naddr.v:2]
-INFO: [Synth 8-638] synthesizing module 'Naddr__parameterized0' [F:/FPGADSP/FPGADSP/Naddr.v:2]
+INFO: [Synth 8-256] done synthesizing module 'Naddr' (22#1) [D:/resource/study/lab20/FPGADSP/src/Naddr.v:2]
+INFO: [Synth 8-638] synthesizing module 'Naddr__parameterized0' [D:/resource/study/lab20/FPGADSP/src/Naddr.v:2]
 	Parameter N bound to: 24 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Naddr__parameterized0' (22#1) [F:/FPGADSP/FPGADSP/Naddr.v:2]
-INFO: [Synth 8-638] synthesizing module 'Naddr__parameterized1' [F:/FPGADSP/FPGADSP/Naddr.v:2]
+INFO: [Synth 8-256] done synthesizing module 'Naddr__parameterized0' (22#1) [D:/resource/study/lab20/FPGADSP/src/Naddr.v:2]
+INFO: [Synth 8-638] synthesizing module 'Naddr__parameterized1' [D:/resource/study/lab20/FPGADSP/src/Naddr.v:2]
 	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Naddr__parameterized1' (22#1) [F:/FPGADSP/FPGADSP/Naddr.v:2]
-INFO: [Synth 8-256] done synthesizing module 'subSum' (23#1) [F:/FPGADSP/FPGADSP/subSum.v:2]
-INFO: [Synth 8-256] done synthesizing module 'booth_multiplier' (24#1) [F:/FPGADSP/FPGADSP/booth_multiplier.v:3]
-INFO: [Synth 8-638] synthesizing module 'Naddr__parameterized2' [F:/FPGADSP/FPGADSP/Naddr.v:2]
+INFO: [Synth 8-256] done synthesizing module 'Naddr__parameterized1' (22#1) [D:/resource/study/lab20/FPGADSP/src/Naddr.v:2]
+INFO: [Synth 8-256] done synthesizing module 'subSum' (23#1) [D:/resource/study/lab20/FPGADSP/src/subSum.v:2]
+INFO: [Synth 8-256] done synthesizing module 'booth_multiplier' (24#1) [D:/resource/study/lab20/FPGADSP/src/booth_multiplier.v:3]
+INFO: [Synth 8-638] synthesizing module 'Naddr__parameterized2' [D:/resource/study/lab20/FPGADSP/src/Naddr.v:2]
 	Parameter N bound to: 33 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Naddr__parameterized2' (24#1) [F:/FPGADSP/FPGADSP/Naddr.v:2]
-INFO: [Synth 8-638] synthesizing module 'dffre__parameterized1' [F:/FPGADSP/FPGADSP/inputbuf/dffre.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Naddr__parameterized2' (24#1) [D:/resource/study/lab20/FPGADSP/src/Naddr.v:2]
+INFO: [Synth 8-638] synthesizing module 'dffre__parameterized1' [D:/resource/study/lab20/FPGADSP/src/inputbuf/dffre.v:1]
 	Parameter WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'dffre__parameterized1' (24#1) [F:/FPGADSP/FPGADSP/inputbuf/dffre.v:1]
-INFO: [Synth 8-256] done synthesizing module 'fir_H' (25#1) [F:/FPGADSP/FPGADSP/fir_H.v:1]
-WARNING: [Synth 8-350] instance 'firh' of module 'fir_H' requires 5 connections, but only 4 given [F:/FPGADSP/FPGADSP/deal_voice.v:43]
-INFO: [Synth 8-638] synthesizing module 'changevoice' [F:/FPGADSP/FPGADSP/changevoice.v:1]
-INFO: [Synth 8-638] synthesizing module 'addrprocess' [F:/FPGADSP/FPGADSP/inputbuf/addrprocess.v:1]
+INFO: [Synth 8-256] done synthesizing module 'dffre__parameterized1' (24#1) [D:/resource/study/lab20/FPGADSP/src/inputbuf/dffre.v:1]
+INFO: [Synth 8-256] done synthesizing module 'fir_H' (25#1) [D:/resource/study/lab20/FPGADSP/src/fir_H.v:1]
+WARNING: [Synth 8-350] instance 'firh' of module 'fir_H' requires 5 connections, but only 4 given [D:/resource/study/lab20/FPGADSP/src/deal_voice.v:44]
+INFO: [Synth 8-638] synthesizing module 'changevoice' [D:/resource/study/lab20/FPGADSP/src/changevoice.v:1]
+INFO: [Synth 8-638] synthesizing module 'addrprocess' [D:/resource/study/lab20/FPGADSP/src/inputbuf/addrprocess.v:1]
 	Parameter I bound to: 3 - type: integer 
 	Parameter D bound to: 4 - type: integer 
 	Parameter addr_bits bound to: 2 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'FirAddr' [F:/FPGADSP/FPGADSP/inputbuf/FirAddr.v:1]
-INFO: [Synth 8-155] case statement is not full and has no default [F:/FPGADSP/FPGADSP/inputbuf/FirAddr.v:16]
-INFO: [Synth 8-256] done synthesizing module 'FirAddr' (26#1) [F:/FPGADSP/FPGADSP/inputbuf/FirAddr.v:1]
-INFO: [Synth 8-638] synthesizing module 'counterL_m' [F:/FPGADSP/FPGADSP/inputbuf/counerL_m.v:1]
+INFO: [Synth 8-638] synthesizing module 'FirAddr' [D:/resource/study/lab20/FPGADSP/src/inputbuf/FirAddr.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/resource/study/lab20/FPGADSP/src/inputbuf/FirAddr.v:16]
+INFO: [Synth 8-256] done synthesizing module 'FirAddr' (26#1) [D:/resource/study/lab20/FPGADSP/src/inputbuf/FirAddr.v:1]
+INFO: [Synth 8-638] synthesizing module 'counterL_m' [D:/resource/study/lab20/FPGADSP/src/inputbuf/counerL_m.v:1]
 	Parameter counter_bits bound to: 2 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'counterL_m' (27#1) [F:/FPGADSP/FPGADSP/inputbuf/counerL_m.v:1]
-INFO: [Synth 8-638] synthesizing module 'counterL' [F:/FPGADSP/FPGADSP/inputbuf/counterL.v:1]
+INFO: [Synth 8-256] done synthesizing module 'counterL_m' (27#1) [D:/resource/study/lab20/FPGADSP/src/inputbuf/counerL_m.v:1]
+INFO: [Synth 8-638] synthesizing module 'counterL' [D:/resource/study/lab20/FPGADSP/src/inputbuf/counterL.v:1]
 	Parameter n bound to: 10'b1111111111 
 	Parameter counter_bits bound to: 10 - type: integer 
 	Parameter setnum bound to: 10'b0000000000 
-INFO: [Synth 8-256] done synthesizing module 'counterL' (28#1) [F:/FPGADSP/FPGADSP/inputbuf/counterL.v:1]
-INFO: [Synth 8-638] synthesizing module 'counterL__parameterized0' [F:/FPGADSP/FPGADSP/inputbuf/counterL.v:1]
+INFO: [Synth 8-256] done synthesizing module 'counterL' (28#1) [D:/resource/study/lab20/FPGADSP/src/inputbuf/counterL.v:1]
+INFO: [Synth 8-638] synthesizing module 'counterL__parameterized0' [D:/resource/study/lab20/FPGADSP/src/inputbuf/counterL.v:1]
 	Parameter n bound to: 10'b1100010100 
 	Parameter counter_bits bound to: 10 - type: integer 
 	Parameter setnum bound to: 10'b0000010101 
-INFO: [Synth 8-256] done synthesizing module 'counterL__parameterized0' (28#1) [F:/FPGADSP/FPGADSP/inputbuf/counterL.v:1]
-INFO: [Synth 8-638] synthesizing module 'counterL__parameterized1' [F:/FPGADSP/FPGADSP/inputbuf/counterL.v:1]
+INFO: [Synth 8-256] done synthesizing module 'counterL__parameterized0' (28#1) [D:/resource/study/lab20/FPGADSP/src/inputbuf/counterL.v:1]
+INFO: [Synth 8-638] synthesizing module 'counterL__parameterized1' [D:/resource/study/lab20/FPGADSP/src/inputbuf/counterL.v:1]
 	Parameter n bound to: 5'b10101 
 	Parameter counter_bits bound to: 5 - type: integer 
 	Parameter setnum bound to: 5'b00000 
-INFO: [Synth 8-256] done synthesizing module 'counterL__parameterized1' (28#1) [F:/FPGADSP/FPGADSP/inputbuf/counterL.v:1]
-INFO: [Synth 8-638] synthesizing module 'dffre__parameterized2' [F:/FPGADSP/FPGADSP/inputbuf/dffre.v:1]
+INFO: [Synth 8-256] done synthesizing module 'counterL__parameterized1' (28#1) [D:/resource/study/lab20/FPGADSP/src/inputbuf/counterL.v:1]
+INFO: [Synth 8-638] synthesizing module 'dffre__parameterized2' [D:/resource/study/lab20/FPGADSP/src/inputbuf/dffre.v:1]
 	Parameter WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'dffre__parameterized2' (28#1) [F:/FPGADSP/FPGADSP/inputbuf/dffre.v:1]
-INFO: [Synth 8-638] synthesizing module 'full_adder' [F:/FPGADSP/FPGADSP/inputbuf/full_adder.v:1]
+INFO: [Synth 8-256] done synthesizing module 'dffre__parameterized2' (28#1) [D:/resource/study/lab20/FPGADSP/src/inputbuf/dffre.v:1]
+INFO: [Synth 8-638] synthesizing module 'full_adder' [D:/resource/study/lab20/FPGADSP/src/inputbuf/full_adder.v:1]
 	Parameter N bound to: 10 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'full_adder' (29#1) [F:/FPGADSP/FPGADSP/inputbuf/full_adder.v:1]
-INFO: [Synth 8-256] done synthesizing module 'addrprocess' (30#1) [F:/FPGADSP/FPGADSP/inputbuf/addrprocess.v:1]
-INFO: [Synth 8-638] synthesizing module 'InOutBuffer' [F:/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-7216-Admin-pc/realtime/InOutBuffer_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'InOutBuffer' (31#1) [F:/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-7216-Admin-pc/realtime/InOutBuffer_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'fir_L' [F:/FPGADSP/FPGADSP/fir.v:1]
-INFO: [Synth 8-638] synthesizing module 'counterT__parameterized0' [F:/FPGADSP/FPGADSP/counterT.v:1]
+INFO: [Synth 8-256] done synthesizing module 'full_adder' (29#1) [D:/resource/study/lab20/FPGADSP/src/inputbuf/full_adder.v:1]
+INFO: [Synth 8-256] done synthesizing module 'addrprocess' (30#1) [D:/resource/study/lab20/FPGADSP/src/inputbuf/addrprocess.v:1]
+INFO: [Synth 8-638] synthesizing module 'InOutBuffer' [D:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-8544-DESKTOP-KL6M9RO/realtime/InOutBuffer_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'InOutBuffer' (31#1) [D:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-8544-DESKTOP-KL6M9RO/realtime/InOutBuffer_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'fir_L' [D:/resource/study/lab20/FPGADSP/src/fir.v:1]
+INFO: [Synth 8-638] synthesizing module 'counterT__parameterized0' [D:/resource/study/lab20/FPGADSP/src/counterT.v:1]
 	Parameter n bound to: 64 - type: integer 
 	Parameter counter_bits bound to: 6 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'counterT__parameterized0' (31#1) [F:/FPGADSP/FPGADSP/counterT.v:1]
-INFO: [Synth 8-638] synthesizing module 'h_rom_l' [F:/FPGADSP/FPGADSP/h_rom_l.v:1]
-INFO: [Synth 8-256] done synthesizing module 'h_rom_l' (32#1) [F:/FPGADSP/FPGADSP/h_rom_l.v:1]
-INFO: [Synth 8-256] done synthesizing module 'fir_L' (33#1) [F:/FPGADSP/FPGADSP/fir.v:1]
-INFO: [Synth 8-638] synthesizing module 'control' [F:/FPGADSP/FPGADSP/control.v:1]
+INFO: [Synth 8-256] done synthesizing module 'counterT__parameterized0' (31#1) [D:/resource/study/lab20/FPGADSP/src/counterT.v:1]
+INFO: [Synth 8-638] synthesizing module 'h_rom_l' [D:/resource/study/lab20/FPGADSP/src/h_rom_l.v:1]
+INFO: [Synth 8-256] done synthesizing module 'h_rom_l' (32#1) [D:/resource/study/lab20/FPGADSP/src/h_rom_l.v:1]
+INFO: [Synth 8-256] done synthesizing module 'fir_L' (33#1) [D:/resource/study/lab20/FPGADSP/src/fir.v:1]
+INFO: [Synth 8-638] synthesizing module 'control' [D:/resource/study/lab20/FPGADSP/src/control.v:1]
 	Parameter Wait bound to: 3'b000 
 	Parameter FirReset bound to: 3'b001 
 	Parameter MAC bound to: 3'b010 
@@ -169,38 +168,38 @@ INFO: [Synth 8-638] synthesizing module 'control' [F:/FPGADSP/FPGADSP/control.v:
 	Parameter RAMWrite bound to: 3'b100 
 	Parameter CopyWait bound to: 3'b101 
 	Parameter Copy bound to: 3'b110 
-INFO: [Synth 8-256] done synthesizing module 'control' (34#1) [F:/FPGADSP/FPGADSP/control.v:1]
-INFO: [Synth 8-638] synthesizing module 'counterT__parameterized1' [F:/FPGADSP/FPGADSP/counterT.v:1]
+INFO: [Synth 8-256] done synthesizing module 'control' (34#1) [D:/resource/study/lab20/FPGADSP/src/control.v:1]
+INFO: [Synth 8-638] synthesizing module 'counterT__parameterized1' [D:/resource/study/lab20/FPGADSP/src/counterT.v:1]
 	Parameter n bound to: 10'b1111111111 
 	Parameter counter_bits bound to: 10 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'counterT__parameterized1' (34#1) [F:/FPGADSP/FPGADSP/counterT.v:1]
-INFO: [Synth 8-638] synthesizing module 'counterT__parameterized2' [F:/FPGADSP/FPGADSP/counterT.v:1]
+INFO: [Synth 8-256] done synthesizing module 'counterT__parameterized1' (34#1) [D:/resource/study/lab20/FPGADSP/src/counterT.v:1]
+INFO: [Synth 8-638] synthesizing module 'counterT__parameterized2' [D:/resource/study/lab20/FPGADSP/src/counterT.v:1]
 	Parameter n bound to: 10'b1000111111 
 	Parameter counter_bits bound to: 10 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'counterT__parameterized2' (34#1) [F:/FPGADSP/FPGADSP/counterT.v:1]
-INFO: [Synth 8-638] synthesizing module 'smoothFilter' [F:/FPGADSP/FPGADSP/smoothFilter.v:1]
-INFO: [Synth 8-638] synthesizing module 'signalGenerate' [F:/FPGADSP/FPGADSP/signalGenerate.v:1]
-INFO: [Synth 8-256] done synthesizing module 'signalGenerate' (35#1) [F:/FPGADSP/FPGADSP/signalGenerate.v:1]
-INFO: [Synth 8-638] synthesizing module 'smoothController' [F:/FPGADSP/FPGADSP/smoothController.v:1]
+INFO: [Synth 8-256] done synthesizing module 'counterT__parameterized2' (34#1) [D:/resource/study/lab20/FPGADSP/src/counterT.v:1]
+INFO: [Synth 8-638] synthesizing module 'smoothFilter' [D:/resource/study/lab20/FPGADSP/src/smoothFilter.v:1]
+INFO: [Synth 8-638] synthesizing module 'signalGenerate' [D:/resource/study/lab20/FPGADSP/src/signalGenerate.v:1]
+INFO: [Synth 8-256] done synthesizing module 'signalGenerate' (35#1) [D:/resource/study/lab20/FPGADSP/src/signalGenerate.v:1]
+INFO: [Synth 8-638] synthesizing module 'smoothController' [D:/resource/study/lab20/FPGADSP/src/smoothController.v:1]
 	Parameter RESET bound to: 0 - type: integer 
 	Parameter SampleAddCount bound to: 1 - type: integer 
 	Parameter LoadData2 bound to: 2 - type: integer 
 	Parameter MAC1 bound to: 3 - type: integer 
 	Parameter MAC2 bound to: 4 - type: integer 
 	Parameter OutData bound to: 5 - type: integer 
-WARNING: [Synth 8-6014] Unused sequential element AddrSel_reg was removed.  [F:/FPGADSP/FPGADSP/smoothController.v:19]
-INFO: [Synth 8-256] done synthesizing module 'smoothController' (36#1) [F:/FPGADSP/FPGADSP/smoothController.v:1]
-INFO: [Synth 8-638] synthesizing module 'counterT__parameterized3' [F:/FPGADSP/FPGADSP/counterT.v:1]
+WARNING: [Synth 8-6014] Unused sequential element AddrSel_reg was removed.  [D:/resource/study/lab20/FPGADSP/src/smoothController.v:19]
+INFO: [Synth 8-256] done synthesizing module 'smoothController' (36#1) [D:/resource/study/lab20/FPGADSP/src/smoothController.v:1]
+INFO: [Synth 8-638] synthesizing module 'counterT__parameterized3' [D:/resource/study/lab20/FPGADSP/src/counterT.v:1]
 	Parameter n bound to: 768 - type: integer 
 	Parameter counter_bits bound to: 10 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'counterT__parameterized3' (36#1) [F:/FPGADSP/FPGADSP/counterT.v:1]
-INFO: [Synth 8-638] synthesizing module 'dffre__parameterized3' [F:/FPGADSP/FPGADSP/inputbuf/dffre.v:1]
+INFO: [Synth 8-256] done synthesizing module 'counterT__parameterized3' (36#1) [D:/resource/study/lab20/FPGADSP/src/counterT.v:1]
+INFO: [Synth 8-638] synthesizing module 'dffre__parameterized3' [D:/resource/study/lab20/FPGADSP/src/inputbuf/dffre.v:1]
 	Parameter WIDTH bound to: 24 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'dffre__parameterized3' (36#1) [F:/FPGADSP/FPGADSP/inputbuf/dffre.v:1]
-INFO: [Synth 8-256] done synthesizing module 'smoothFilter' (37#1) [F:/FPGADSP/FPGADSP/smoothFilter.v:1]
-WARNING: [Synth 8-3848] Net SampleCount in module/entity changevoice does not have driver. [F:/FPGADSP/FPGADSP/changevoice.v:4]
-INFO: [Synth 8-256] done synthesizing module 'changevoice' (38#1) [F:/FPGADSP/FPGADSP/changevoice.v:1]
-INFO: [Synth 8-256] done synthesizing module 'deal_voice' (39#1) [F:/FPGADSP/FPGADSP/deal_voice.v:1]
+INFO: [Synth 8-256] done synthesizing module 'dffre__parameterized3' (36#1) [D:/resource/study/lab20/FPGADSP/src/inputbuf/dffre.v:1]
+INFO: [Synth 8-256] done synthesizing module 'smoothFilter' (37#1) [D:/resource/study/lab20/FPGADSP/src/smoothFilter.v:1]
+WARNING: [Synth 8-3848] Net SampleCount in module/entity changevoice does not have driver. [D:/resource/study/lab20/FPGADSP/src/changevoice.v:4]
+INFO: [Synth 8-256] done synthesizing module 'changevoice' (38#1) [D:/resource/study/lab20/FPGADSP/src/changevoice.v:1]
+INFO: [Synth 8-256] done synthesizing module 'deal_voice' (39#1) [D:/resource/study/lab20/FPGADSP/src/deal_voice.v:1]
 WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[9]
 WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[8]
 WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[7]
@@ -212,7 +211,7 @@ WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[2]
 WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[1]
 WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 362.828 ; gain = 119.367
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 362.547 ; gain = 119.902
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -221,60 +220,62 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin i1:I2C_clk to constant 0 [F:/FPGADSP/FPGADSP/de_coder.v:37]
-WARNING: [Synth 8-3295] tying undriven pin firh:reset to constant 0 [F:/FPGADSP/FPGADSP/deal_voice.v:43]
+WARNING: [Synth 8-3295] tying undriven pin firh:reset to constant 0 [D:/resource/study/lab20/FPGADSP/src/deal_voice.v:44]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 362.828 ; gain = 119.367
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 362.547 ; gain = 119.902
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a200tfbg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [F:/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-7216-Admin-pc/dcp5/DCM_PLL_in_context.xdc] for cell 'DCM'
-Finished Parsing XDC File [F:/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-7216-Admin-pc/dcp5/DCM_PLL_in_context.xdc] for cell 'DCM'
-Parsing XDC File [F:/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-7216-Admin-pc/dcp7/InOutBuffer_in_context.xdc] for cell 'changevoice/smoothFilter/InOutbuf1'
-Finished Parsing XDC File [F:/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-7216-Admin-pc/dcp7/InOutBuffer_in_context.xdc] for cell 'changevoice/smoothFilter/InOutbuf1'
-Parsing XDC File [F:/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-7216-Admin-pc/dcp7/InOutBuffer_in_context.xdc] for cell 'changevoice/InOutBuf'
-Finished Parsing XDC File [F:/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-7216-Admin-pc/dcp7/InOutBuffer_in_context.xdc] for cell 'changevoice/InOutBuf'
-Parsing XDC File [F:/FPGADSP/vivado/voicechange/voicechange.srcs/constrs_1/new/DEALVOICE.xdc]
-Finished Parsing XDC File [F:/FPGADSP/vivado/voicechange/voicechange.srcs/constrs_1/new/DEALVOICE.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/FPGADSP/vivado/voicechange/voicechange.srcs/constrs_1/new/DEALVOICE.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/deal_voice_propImpl.xdc].
+Parsing XDC File [D:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-8544-DESKTOP-KL6M9RO/dcp5/DCM_PLL_in_context.xdc] for cell 'DCM'
+Finished Parsing XDC File [D:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-8544-DESKTOP-KL6M9RO/dcp5/DCM_PLL_in_context.xdc] for cell 'DCM'
+Parsing XDC File [D:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-8544-DESKTOP-KL6M9RO/dcp7/InOutBuffer_in_context.xdc] for cell 'changevoice/smoothFilter/InOutbuf1'
+Finished Parsing XDC File [D:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-8544-DESKTOP-KL6M9RO/dcp7/InOutBuffer_in_context.xdc] for cell 'changevoice/smoothFilter/InOutbuf1'
+Parsing XDC File [D:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-8544-DESKTOP-KL6M9RO/dcp7/InOutBuffer_in_context.xdc] for cell 'changevoice/InOutBuf'
+Finished Parsing XDC File [D:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-8544-DESKTOP-KL6M9RO/dcp7/InOutBuffer_in_context.xdc] for cell 'changevoice/InOutBuf'
+Parsing XDC File [D:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.srcs/constrs_1/new/DEALVOICE.xdc]
+Finished Parsing XDC File [D:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.srcs/constrs_1/new/DEALVOICE.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.srcs/constrs_1/new/DEALVOICE.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/deal_voice_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/deal_voice_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 721.195 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 796.051 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 721.195 ; gain = 477.734
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 796.051 ; gain = 553.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 721.195 ; gain = 477.734
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 796.051 ; gain = 553.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  F:/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-7216-Admin-pc/dcp5/DCM_PLL_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  F:/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-7216-Admin-pc/dcp5/DCM_PLL_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  D:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-8544-DESKTOP-KL6M9RO/dcp5/DCM_PLL_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  D:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/.Xil/Vivado-8544-DESKTOP-KL6M9RO/dcp5/DCM_PLL_in_context.xdc, line 5).
 Applied set_property DONT_TOUCH = true for DCM. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for changevoice/InOutBuf. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for changevoice/smoothFilter/InOutbuf1. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 721.195 ; gain = 477.734
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 796.051 ; gain = 553.406
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element q_reg was removed.  [F:/FPGADSP/FPGADSP/video/q8.v:6]
+WARNING: [Synth 8-6014] Unused sequential element q_reg was removed.  [D:/resource/study/lab20/FPGADSP/src/video/q8.v:6]
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Com_control'
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/FPGADSP/FPGADSP/Com/Com_control.v:9]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [D:/resource/study/lab20/FPGADSP/src/Com/Com_control.v:10]
+WARNING: [Synth 8-6014] Unused sequential element n_state_reg was removed.  [D:/resource/study/lab20/FPGADSP/src/Com/Com_control.v:16]
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Write" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'I2C_Control'
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/FPGADSP/FPGADSP/I2C/I2C_Control.v:16]
-WARNING: [Synth 8-6014] Unused sequential element n_state_reg was removed.  [F:/FPGADSP/FPGADSP/I2C/I2C_Control.v:27]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [D:/resource/study/lab20/FPGADSP/src/I2C/I2C_Control.v:16]
+WARNING: [Synth 8-6014] Unused sequential element n_state_reg was removed.  [D:/resource/study/lab20/FPGADSP/src/I2C/I2C_Control.v:27]
 INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "SetCountMax" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "errory" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -293,9 +294,9 @@ INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address 
 INFO: [Synth 8-5544] ROM "oe" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "clr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element data2_reg was removed.  [F:/FPGADSP/FPGADSP/inputbuf/FirAddr.v:11]
+WARNING: [Synth 8-6014] Unused sequential element data2_reg was removed.  [D:/resource/study/lab20/FPGADSP/src/inputbuf/FirAddr.v:11]
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'control'
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/FPGADSP/FPGADSP/control.v:17]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [D:/resource/study/lab20/FPGADSP/src/control.v:17]
 INFO: [Synth 8-5544] ROM "Incopy" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "OutBufWea" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "FirOe" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -305,14 +306,16 @@ INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because addres
 INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'smoothController'
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/FPGADSP/FPGADSP/smoothController.v:10]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [D:/resource/study/lab20/FPGADSP/src/smoothController.v:10]
 INFO: [Synth 8-5544] ROM "OutEn" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "SClr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "FactorSel" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/FPGADSP/FPGADSP/Com/Com_control.v:9]
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/FPGADSP/FPGADSP/Com/Com_control.v:9]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [D:/resource/study/lab20/FPGADSP/src/Com/Com_control.v:10]
+WARNING: [Synth 8-327] inferring latch for variable 'n_state_reg' [D:/resource/study/lab20/FPGADSP/src/Com/Com_control.v:16]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [D:/resource/study/lab20/FPGADSP/src/Com/Com_control.v:10]
+WARNING: [Synth 8-327] inferring latch for variable 'n_state_reg' [D:/resource/study/lab20/FPGADSP/src/Com/Com_control.v:16]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -320,14 +323,15 @@ WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/FP
                 ComWrite |                               01 |                               01
                  ComWait |                               10 |                               10
                   iSTATE |                               11 |                               11
-*
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Com_control'
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/FPGADSP/FPGADSP/Com/Com_control.v:9]
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/FPGADSP/FPGADSP/I2C/I2C_Control.v:16]
-WARNING: [Synth 8-327] inferring latch for variable 'n_state_reg' [F:/FPGADSP/FPGADSP/I2C/I2C_Control.v:27]
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/FPGADSP/FPGADSP/I2C/I2C_Control.v:16]
-WARNING: [Synth 8-327] inferring latch for variable 'n_state_reg' [F:/FPGADSP/FPGADSP/I2C/I2C_Control.v:27]
+WARNING: [Synth 8-6014] Unused sequential element n_state_reg was removed.  [D:/resource/study/lab20/FPGADSP/src/Com/Com_control.v:16]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [D:/resource/study/lab20/FPGADSP/src/Com/Com_control.v:10]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_n_state_reg' [D:/resource/study/lab20/FPGADSP/src/Com/Com_control.v:16]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [D:/resource/study/lab20/FPGADSP/src/I2C/I2C_Control.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'n_state_reg' [D:/resource/study/lab20/FPGADSP/src/I2C/I2C_Control.v:27]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [D:/resource/study/lab20/FPGADSP/src/I2C/I2C_Control.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'n_state_reg' [D:/resource/study/lab20/FPGADSP/src/I2C/I2C_Control.v:27]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -347,14 +351,14 @@ WARNING: [Synth 8-327] inferring latch for variable 'n_state_reg' [F:/FPGADSP/FP
                   iSTATE |                             1101 |                             1101
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'I2C_Control'
-WARNING: [Synth 8-6014] Unused sequential element n_state_reg was removed.  [F:/FPGADSP/FPGADSP/I2C/I2C_Control.v:27]
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/FPGADSP/FPGADSP/I2C/I2C_Control.v:16]
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_n_state_reg' [F:/FPGADSP/FPGADSP/I2C/I2C_Control.v:27]
-WARNING: [Synth 8-327] inferring latch for variable 'InsideSda_reg' [F:/FPGADSP/FPGADSP/I2C/I2C.v:20]
-WARNING: [Synth 8-327] inferring latch for variable 'nextstate_reg' [F:/FPGADSP/FPGADSP/firControl.v:18]
-WARNING: [Synth 8-327] inferring latch for variable 'P_reg' [F:/FPGADSP/FPGADSP/subMultiply.v:10]
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/FPGADSP/FPGADSP/control.v:17]
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/FPGADSP/FPGADSP/control.v:17]
+WARNING: [Synth 8-6014] Unused sequential element n_state_reg was removed.  [D:/resource/study/lab20/FPGADSP/src/I2C/I2C_Control.v:27]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [D:/resource/study/lab20/FPGADSP/src/I2C/I2C_Control.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_n_state_reg' [D:/resource/study/lab20/FPGADSP/src/I2C/I2C_Control.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'InsideSda_reg' [D:/resource/study/lab20/FPGADSP/src/I2C/I2C.v:21]
+WARNING: [Synth 8-327] inferring latch for variable 'nextstate_reg' [D:/resource/study/lab20/FPGADSP/src/firControl.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'P_reg' [D:/resource/study/lab20/FPGADSP/src/subMultiply.v:10]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [D:/resource/study/lab20/FPGADSP/src/control.v:17]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [D:/resource/study/lab20/FPGADSP/src/control.v:17]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -367,9 +371,9 @@ WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/FP
                     Copy |                              110 |                              110
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'control'
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/FPGADSP/FPGADSP/control.v:17]
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/FPGADSP/FPGADSP/smoothController.v:10]
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/FPGADSP/FPGADSP/smoothController.v:10]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [D:/resource/study/lab20/FPGADSP/src/control.v:17]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [D:/resource/study/lab20/FPGADSP/src/smoothController.v:10]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [D:/resource/study/lab20/FPGADSP/src/smoothController.v:10]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -381,9 +385,9 @@ WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/FP
                  OutData |                              101 |                              101
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'smoothController'
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [F:/FPGADSP/FPGADSP/smoothController.v:10]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [D:/resource/study/lab20/FPGADSP/src/smoothController.v:10]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 721.195 ; gain = 477.734
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 796.051 ; gain = 553.406
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -439,7 +443,7 @@ Detailed RTL Component Info :
 	   2 Input      2 Bit        Muxes := 5     
 	   8 Input      2 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 8     
 	  14 Input      1 Bit        Muxes := 6     
 	   7 Input      1 Bit        Muxes := 5     
 	   2 Input      1 Bit        Muxes := 9     
@@ -490,7 +494,7 @@ Module Com_control
 Detailed RTL Component Info : 
 +---Muxes : 
 	   6 Input      2 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
 Module I2C_Control 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -715,8 +719,8 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element Firaddr/data2_reg was removed.  [F:/FPGADSP/FPGADSP/inputbuf/FirAddr.v:11]
-WARNING: [Synth 8-6014] Unused sequential element de_coder/v1/q_8/q_reg was removed.  [F:/FPGADSP/FPGADSP/video/q8.v:6]
+WARNING: [Synth 8-6014] Unused sequential element Firaddr/data2_reg was removed.  [D:/resource/study/lab20/FPGADSP/src/inputbuf/FirAddr.v:11]
+WARNING: [Synth 8-6014] Unused sequential element de_coder/v1/q_8/q_reg was removed.  [D:/resource/study/lab20/FPGADSP/src/video/q8.v:6]
 WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[9]
 WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[8]
 WARNING: [Synth 8-3331] design changevoice has unconnected port SampleCount[7]
@@ -874,7 +878,7 @@ WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply4/P_reg
 WARNING: [Synth 8-3332] Sequential element (booth_multiplier0/subMultiply4/P_reg[12]) is unused and will be removed from module fir_H.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 777.410 ; gain = 533.949
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 796.051 ; gain = 553.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -910,13 +914,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'DCM/clk_out1' to pin 'DCM
 INFO: [Synth 8-5578] Moved timing constraint from pin 'DCM/clk_out2' to pin 'DCM/bbstub_clk_out2/O'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 781.230 ; gain = 537.770
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 796.051 ; gain = 553.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 1032.406 ; gain = 788.945
+Finished Timing Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 1037.844 ; gain = 795.199
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -928,7 +932,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1032.406 ; gain = 788.945
+Finished Technology Mapping : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 1037.844 ; gain = 795.199
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -952,7 +956,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 1032.406 ; gain = 788.945
+Finished IO Insertion : Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 1037.844 ; gain = 795.199
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -965,7 +969,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 1032.406 ; gain = 788.945
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 1037.844 ; gain = 795.199
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -977,25 +981,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 1032.406 ; gain = 788.945
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:06 ; elapsed = 00:01:07 . Memory (MB): peak = 1037.844 ; gain = 795.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 1032.406 ; gain = 788.945
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:06 ; elapsed = 00:01:07 . Memory (MB): peak = 1037.844 ; gain = 795.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 1032.406 ; gain = 788.945
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:06 ; elapsed = 00:01:07 . Memory (MB): peak = 1037.844 ; gain = 795.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 1032.406 ; gain = 788.945
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:06 ; elapsed = 00:01:07 . Memory (MB): peak = 1037.844 ; gain = 795.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1019,15 +1023,15 @@ Report Cell Usage:
 |4     |BUFG           |     2|
 |5     |CARRY4         |    13|
 |6     |LUT1           |    39|
-|7     |LUT2           |   113|
-|8     |LUT3           |   315|
-|9     |LUT4           |    88|
-|10    |LUT5           |   624|
+|7     |LUT2           |   114|
+|8     |LUT3           |   316|
+|9     |LUT4           |    90|
+|10    |LUT5           |   621|
 |11    |LUT6           |   797|
 |12    |MUXF7          |    74|
 |13    |MUXF8          |     2|
 |14    |FDRE           |   864|
-|15    |LD             |     6|
+|15    |LD             |     8|
 |16    |IBUF           |     4|
 |17    |IOBUF          |     2|
 |18    |OBUF           |     4|
@@ -1037,7 +1041,7 @@ Report Instance Areas:
 +------+------------------------+-------------------------+------+
 |      |Instance                |Module                   |Cells |
 +------+------------------------+-------------------------+------+
-|1     |top                     |                         |  2982|
+|1     |top                     |                         |  2985|
 |2     |  D1                    |dffre                    |     1|
 |3     |  D2                    |dffre_0                  |     2|
 |4     |  changevoice           |changevoice              |  1350|
@@ -1063,17 +1067,17 @@ Report Instance Areas:
 |24    |      dffre1            |dffre__parameterized0_36 |    16|
 |25    |      signalGenerate0   |signalGenerate           |     2|
 |26    |      smoothController0 |smoothController         |    29|
-|27    |  de_coder              |de_coder                 |   238|
-|28    |    c1                  |Com                      |    42|
-|29    |      c1                |Com_control              |     5|
+|27    |  de_coder              |de_coder                 |   240|
+|28    |    c1                  |Com                      |    44|
+|29    |      c1                |Com_control              |     7|
 |30    |      counter           |counterT_35              |    37|
 |31    |    i1                  |I2C                      |    39|
 |32    |      div               |div_2                    |     2|
 |33    |      i1                |I2C_Control              |    28|
 |34    |      sub1              |sub                      |     8|
 |35    |    v1                  |video_top                |   157|
-|36    |      a5                |d                        |    24|
-|37    |      a6                |d_33                     |    40|
+|36    |      d1                |d                        |    24|
+|37    |      d2                |d_33                     |    40|
 |38    |      q_8               |q8                       |    29|
 |39    |      r1                |Register                 |    40|
 |40    |      r2                |Register_34              |    24|
@@ -1118,24 +1122,24 @@ Report Instance Areas:
 |79    |    firControl0         |firControl               |     8|
 +------+------------------------+-------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 1032.406 ; gain = 788.945
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:06 ; elapsed = 00:01:07 . Memory (MB): peak = 1037.844 ; gain = 795.199
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 429 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 1032.406 ; gain = 430.578
-Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 1032.406 ; gain = 788.945
+Synthesis finished with 0 errors, 0 critical warnings and 434 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 1037.844 ; gain = 361.695
+Synthesis Optimization Complete : Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 1037.844 ; gain = 795.199
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 8 instances were transformed.
+  A total of 10 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
-  LD => LDCE: 6 instances
+  LD => LDCE: 8 instances
 
-208 Infos, 154 Warnings, 0 Critical Warnings and 0 Errors encountered.
+210 Infos, 157 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:07 ; elapsed = 00:01:12 . Memory (MB): peak = 1032.406 ; gain = 796.809
-INFO: [Common 17-1381] The checkpoint 'F:/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/deal_voice.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 1032.406 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Jul 21 10:13:23 2018...
+synth_design: Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1037.844 ; gain = 801.742
+INFO: [Common 17-1381] The checkpoint 'D:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.runs/synth_1/deal_voice.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1037.844 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 21 10:50:40 2018...
