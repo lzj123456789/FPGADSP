@@ -15,7 +15,58 @@ firControl firControl0(
 	.clk(clk),
 	.oe(oe),
 	.clr(clr));
-wire[15:0] x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19,x20,x21,x22,x23
+
+reg[511:0] x_temp;
+
+
+always @(posedge clk ) begin
+	if(reset)
+		x_temp = 512'b0;
+	else if(sample)begin
+		x_temp = x_temp>>16;
+		x_temp[511:496] = xIn;
+	end
+
+end
+
+wire [4:0] q;
+always @(*) begin
+	case (q)
+			5'b00000: x_out=x_temp[15:0];
+			5'b00001: x_out=x_temp[31:16];
+			5'b00010: x_out=x_temp[47:32];
+			5'b00011: x_out=x_temp[63:48];
+			5'b00100: x_out=x_temp[79:64];
+			5'b00101: x_out=x_temp[95:80];
+			5'b00110: x_out=x_temp[111:96];
+			5'b00111: x_out=x_temp[127:112];
+			5'b01000: x_out=x_temp[143:128];
+			5'b01001: x_out=x_temp[159:144];
+			5'b01010: x_out=x_temp[175:160];
+			5'b01011: x_out=x_temp[191:176];
+			5'b01100: x_out=x_temp[207:192];
+			5'b01101: x_out=x_temp[223:208];
+			5'b01110: x_out=x_temp[239:224];
+			5'b01111: x_out=x_temp[255:240];
+			5'b10000: x_out=x_temp[271:256];
+			5'b10001: x_out=x_temp[287:272];
+			5'b10010: x_out=x_temp[303:288];
+			5'b10011: x_out=x_temp[319:304];
+			5'b10100: x_out=x_temp[335:320];
+			5'b10101: x_out=x_temp[351:336];
+			5'b10110: x_out=x_temp[367:352];
+			5'b10111: x_out=x_temp[383:368];
+			5'b11000: x_out=x_temp[399:384];
+			5'b11001: x_out=x_temp[415:400];
+			5'b11010: x_out=x_temp[431:416];
+			5'b11011: x_out=x_temp[447:432];
+			5'b11100: x_out=x_temp[463:448];
+			5'b11101: x_out=x_temp[479:464];
+			5'b11110: x_out=x_temp[495:480];
+			5'b11111: x_out=x_temp[511:496];
+end
+
+/*wire[15:0] x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19,x20,x21,x22,x23
 ,x24,x25,x26,x27,x28,x29,x30,x31;
 
 dffre #(.WIDTH(16)) dffre0(.d(xIn),.en(sample),.r(1'b0),.clk(clk),.q(x0));
@@ -50,9 +101,9 @@ dffre #(.WIDTH(16)) dffre28(.d(x27),.en(sample),.r(1'b0),.clk(clk),.q(x28));
 dffre #(.WIDTH(16)) dffre29(.d(x28),.en(sample),.r(1'b0),.clk(clk),.q(x29));
 dffre #(.WIDTH(16)) dffre30(.d(x29),.en(sample),.r(1'b0),.clk(clk),.q(x30));
 dffre #(.WIDTH(16)) dffre31(.d(x30),.en(sample),.r(1'b0),.clk(clk),.q(x31));
-
+*/
 wire[4:0] qSel;
-counterT #(.n(32),.counter_bits(5)) counterT(.clk(clk),.en(1'b1),.r(clr),.q(qSel),.co(co));
+counterT #(.n(32),.counter_bits(5)) counterT(.clk(clk),.en(1'b1),.r(clr),.q(q),.co(co));
 
 wire[15:0] multiA;
 SelTWtoO  SelTWto0(.selQ(multiA),.sel(qSel),.x0(x0),.x1(x1),.x2(x2),.x3(x3),.x4(x4),.x5(x5),.x6(x6),.x7(x7),.x8(x8),.x9(x9)
@@ -61,10 +112,10 @@ SelTWtoO  SelTWto0(.selQ(multiA),.sel(qSel),.x0(x0),.x1(x1),.x2(x2),.x3(x3),.x4(
 ,.x26(x26),.x27(x27),.x28(x28),.x29(x29),.x30(x30),.x31(x31));
 
 wire[15:0] multiB;
-h_rom_h h_rom_h1(.addr(qSel),.dout(multiB));
+h_rom_h h_rom_h1(.addr(~q+1),.dout(multiB));
 
 wire[31:0] MultiResult;
-booth_multiplier booth_multiplier0(.A(multiA),.B(multiB),.P(MultiResult));
+booth_multiplier booth_multiplier0(.A(x_out),.B(multiB),.P(MultiResult));
 wire[31:0] raw_y;
 wire[32:0] sumd; 
 Naddr #(.N(33)) Naddr(.a({raw_y[31],raw_y}),.b({MultiResult[31],MultiResult}),.s(sumd),.ci(1'b0),.co());
