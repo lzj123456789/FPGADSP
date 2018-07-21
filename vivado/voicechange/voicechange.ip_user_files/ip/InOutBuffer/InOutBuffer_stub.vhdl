@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
--- Date        : Sat Jul 14 14:21:40 2018
+-- Date        : Sat Jul 14 14:21:39 2018
 -- Host        : Admin-pc running 64-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode synth_stub
---               f:/lab20_VoiceChanger/voicechange/voicechange.srcs/sources_1/ip/InOutBuffer/InOutBuffer_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top InOutBuffer -prefix
+--               InOutBuffer_ InOutBuffer_stub.vhdl
 -- Design      : InOutBuffer
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a200tfbg484-1

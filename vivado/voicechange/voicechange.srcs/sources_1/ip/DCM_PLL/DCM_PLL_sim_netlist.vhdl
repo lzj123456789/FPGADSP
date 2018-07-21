@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
 -- Date        : Sat Jul 14 14:14:27 2018
 -- Host        : Admin-pc running 64-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode funcsim
---               f:/lab20_VoiceChanger/voicechange/voicechange.srcs/sources_1/ip/DCM_PLL/DCM_PLL_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top DCM_PLL -prefix
+--               DCM_PLL_ DCM_PLL_sim_netlist.vhdl
 -- Design      : DCM_PLL
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -22,8 +22,6 @@ entity DCM_PLL_DCM_PLL_clk_wiz is
     locked : out STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of DCM_PLL_DCM_PLL_clk_wiz : entity is "DCM_PLL_clk_wiz";
 end DCM_PLL_DCM_PLL_clk_wiz;
 
 architecture STRUCTURE of DCM_PLL_DCM_PLL_clk_wiz is

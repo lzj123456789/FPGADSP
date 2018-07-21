@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='F:/lab20_VoiceChanger/voicechange/voicechange.runs/DCM_PLL_synth_1'
+HD_PWD='F:/FPGADSP/vivado/voicechange/voicechange.runs/DCM_PLL_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

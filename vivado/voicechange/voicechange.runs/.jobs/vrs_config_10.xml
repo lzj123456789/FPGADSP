@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="InOutBuffer_synth_1" LaunchDir="F:/FPGADSP/vivado/voicechange/voicechange.runs/InOutBuffer_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="F:/FPGADSP/vivado/voicechange/voicechange.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="InOutBuffer_synth_1"/>
+	</Run>
+</Runs>
+

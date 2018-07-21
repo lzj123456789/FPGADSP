@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
 // Date        : Sat Jul 14 14:14:27 2018
 // Host        : Admin-pc running 64-bit Service Pack 1  (build 7601)
-// Command     : write_verilog -force -mode funcsim
-//               f:/lab20_VoiceChanger/voicechange/voicechange.srcs/sources_1/ip/DCM_PLL/DCM_PLL_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top DCM_PLL -prefix
+//               DCM_PLL_ DCM_PLL_sim_netlist.v
 // Design      : DCM_PLL
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -39,7 +39,6 @@ module DCM_PLL
         .reset(reset));
 endmodule
 
-(* ORIG_REF_NAME = "DCM_PLL_clk_wiz" *) 
 module DCM_PLL_DCM_PLL_clk_wiz
    (clk_out1,
     clk_out2,

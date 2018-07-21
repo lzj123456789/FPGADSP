@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sat Jul 21 10:30:21 2018
+# Process ID: 8008
+# Current directory: F:/FPGADSP/vivado/voicechange
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2904 F:\FPGADSP\vivado\voicechange\voicechange.xpr
+# Log file: F:/FPGADSP/vivado/voicechange/vivado.log
+# Journal file: F:/FPGADSP/vivado/voicechange\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FPGADSP/vivado/voicechange/voicechange.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1

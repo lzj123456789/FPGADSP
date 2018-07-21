@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-// Date        : Sat Jul 14 14:21:40 2018
+// Date        : Sat Jul 14 14:21:39 2018
 // Host        : Admin-pc running 64-bit Service Pack 1  (build 7601)
-// Command     : write_verilog -force -mode funcsim
-//               f:/lab20_VoiceChanger/voicechange/voicechange.srcs/sources_1/ip/InOutBuffer/InOutBuffer_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top InOutBuffer -prefix
+//               InOutBuffer_ InOutBuffer_sim_netlist.v
 // Design      : InOutBuffer
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -100,7 +100,7 @@ endmodule
 (* C_MEM_INIT_FILE = "no_coe_file_loaded" *) (* C_MEM_TYPE = "4" *) (* C_PARSER_TYPE = "1" *) 
 (* C_PIPELINE_STAGES = "0" *) (* C_QCE_JOINED = "0" *) (* C_QUALIFY_WE = "0" *) 
 (* C_READ_MIF = "0" *) (* C_REG_A_D_INPUTS = "0" *) (* C_REG_DPRA_INPUT = "0" *) 
-(* C_SYNC_ENABLE = "1" *) (* C_WIDTH = "16" *) (* ORIG_REF_NAME = "dist_mem_gen_v8_0_11" *) 
+(* C_SYNC_ENABLE = "1" *) (* C_WIDTH = "16" *) 
 module InOutBuffer_dist_mem_gen_v8_0_11
    (a,
     d,
@@ -204,7 +204,6 @@ module InOutBuffer_dist_mem_gen_v8_0_11
         .we(we));
 endmodule
 
-(* ORIG_REF_NAME = "dist_mem_gen_v8_0_11_synth" *) 
 module InOutBuffer_dist_mem_gen_v8_0_11_synth
    (qdpo,
     clk,
@@ -235,7 +234,6 @@ module InOutBuffer_dist_mem_gen_v8_0_11_synth
         .we(we));
 endmodule
 
-(* ORIG_REF_NAME = "sdpram" *) 
 module InOutBuffer_sdpram
    (qdpo,
     clk,

@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-| Date             : Tue Jul 17 16:39:28 2018
+| Date             : Sat Jul 21 10:16:18 2018
 | Host             : Admin-pc running 64-bit Service Pack 1  (build 7601)
 | Command          : report_power -file deal_voice_power_routed.rpt -pb deal_voice_power_summary_routed.pb -rpx deal_voice_power_routed.rpx
 | Design           : deal_voice
@@ -31,7 +31,7 @@ Table of Contents
 
 +--------------------------+-------+
 | Total On-Chip Power (W)  | 0.244 |
-| Dynamic (W)              | 0.105 |
+| Dynamic (W)              | 0.106 |
 | Device Static (W)        | 0.139 |
 | Effective TJA (C/W)      | 2.5   |
 | Max Ambient (C)          | 84.4  |
@@ -50,15 +50,15 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.002 |        6 |       --- |             --- |
-| Slice Logic              |     0.004 |     3895 |       --- |             --- |
-|   LUT as Logic           |     0.003 |     1703 |    133800 |            1.27 |
+| Slice Logic              |     0.004 |     3897 |       --- |             --- |
+|   LUT as Logic           |     0.003 |     1706 |    133800 |            1.28 |
 |   LUT as Distributed RAM |    <0.001 |      704 |     46200 |            1.52 |
 |   Register               |    <0.001 |      884 |    267600 |            0.33 |
-|   F7/F8 Muxes            |    <0.001 |      162 |    133800 |            0.12 |
+|   F7/F8 Muxes            |    <0.001 |      163 |    133800 |            0.12 |
 |   CARRY4                 |    <0.001 |       13 |     33450 |            0.04 |
 |   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
-|   Others                 |     0.000 |       77 |       --- |             --- |
-| Signals                  |     0.003 |     3083 |       --- |             --- |
+|   Others                 |     0.000 |       76 |       --- |             --- |
+| Signals                  |     0.004 |     3084 |       --- |             --- |
 | PLL                      |     0.095 |        1 |        10 |           10.00 |
 | I/O                      |     0.002 |       11 |       285 |            3.86 |
 | Static Power             |     0.139 |          |           |                 |
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.046 |       0.016 |      0.030 |
+| Vccint    |       1.000 |     0.046 |       0.016 |      0.031 |
 | Vccaux    |       1.800 |     0.079 |       0.049 |      0.031 |
 | Vcco33    |       3.300 |     0.006 |       0.001 |      0.005 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -144,14 +144,14 @@ Table of Contents
 +---------------------------------------+-----------+
 | Name                                  | Power (W) |
 +---------------------------------------+-----------+
-| deal_voice                            |     0.105 |
+| deal_voice                            |     0.106 |
 |   D1                                  |    <0.001 |
 |   D2                                  |    <0.001 |
 |   DCM                                 |     0.095 |
 |     inst                              |     0.095 |
 |   SCL_IOBUF_inst                      |     0.000 |
 |   SDA_IOBUF_inst                      |     0.000 |
-|   changevoice                         |     0.007 |
+|   changevoice                         |     0.008 |
 |     Fir                               |     0.003 |
 |       booth_multiplier0               |     0.002 |
 |         subMultiply0                  |     0.002 |

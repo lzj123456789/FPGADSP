@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sat Jul 21 10:29:08 2018
+# Process ID: 6196
+# Current directory: F:/FPGADSP/vivado/voicechange
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7708 F:\FPGADSP\vivado\voicechange\voicechange.xpr
+# Log file: F:/FPGADSP/vivado/voicechange/vivado.log
+# Journal file: F:/FPGADSP/vivado/voicechange\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FPGADSP/vivado/voicechange/voicechange.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/Com/Com.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/Com/Com_control.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/inputbuf/FirAddr.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/I2C/I2C.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/I2C/I2C_Control.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/Naddr.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/video/Register.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/SelTWtoO.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/inputbuf/addrprocess.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/boothEncode.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/booth_multiplier.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/changevoice.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/control.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/inputbuf/counerL_m.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/inputbuf/counterL.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/counterT.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/video/d.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/de_coder.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/Com/decoder5_16.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/inputbuf/dffre.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/I2C/div_2.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/fir.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/firControl.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/fir_H.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/inputbuf/full_adder.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/h_rom_h.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/h_rom_l.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/video/produce.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/video/q8.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/signalGenerate.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/smoothController.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/smoothFilter.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/I2C/sub.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/subMultiply.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/subSum.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/video/video_top.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/deal_voice.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FPGADSP/FPGADSP/Com/counterT.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.1/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 752.766 ; gain = 33.027
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 21 10:29:50 2018...
