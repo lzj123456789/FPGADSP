@@ -36,9 +36,12 @@ module deal_voice(clk, reset, ADC_SDATA, ChangeEn, RisingTone,
 		.SCL(SCL), 
 		.error()
 		);
-    wire temp, ready;
+    wire temp, ready,temp1;
 	dffre #(.WIDTH(1)) D1(.d(NewFrame), .clk(sys_clk), .r(reset), .q(temp), .en(1'b1));
-	dffre #(.WIDTH(1)) D2(.d(temp), .clk(sys_clk), .r(reset), .q(ready), .en(1'b1));
+	dffre #(.WIDTH(1)) D2(.d(temp), .clk(sys_clk), .r(reset), .q(temp1), .en(1'b1));
+
+	assign ready = (~temp1)&temp;
+
 
 	
 	fir_H firh(.sample(ready),.xIn(RightRecData[23:8]),.clk(sys_clk),.yOut(Sampletemp),.reset(reset));
