@@ -31,7 +31,6 @@ always @(posedge clk ) begin
 
 end
 
-wire [4:0] q;
 always @(*) begin
 	case (q)
 			5'b00000: x_out=x_temp[15:0];
@@ -108,13 +107,13 @@ dffre #(.WIDTH(16)) dffre31(.d(x30),.en(sample),.r(1'b0),.clk(clk),.q(x31));
 */
 wire[4:0] qSel;
 counterT #(.n(32),.counter_bits(5)) counterT(.clk(clk),.en(1'b1),.r(clr),.q(q),.co(co));
-
+/*
 wire[15:0] multiA;
 SelTWtoO  SelTWto0(.selQ(multiA),.sel(qSel),.x0(x0),.x1(x1),.x2(x2),.x3(x3),.x4(x4),.x5(x5),.x6(x6),.x7(x7),.x8(x8),.x9(x9)
 ,.x10(x10),.x11(x11),.x12(x12),.x13(x13),.x14(x14),.x15(x15),.x16(x16),.x17(x17)
 ,.x18(x18),.x19(x19),.x20(x20),.x21(x21),.x22(x22),.x23(x23),.x24(x24),.x25(x25)
 ,.x26(x26),.x27(x27),.x28(x28),.x29(x29),.x30(x30),.x31(x31));
-
+*/
 wire[15:0] multiB;
 h_rom_h h_rom_h1(.addr(~q+1),.dout(multiB));
 
