@@ -16,8 +16,8 @@ module I2C_Control(reset, write, I2C_clk, sel, SclEn, ready, errory, SetCountMax
             if(reset) state=IDLE;
             else state=n_state;
 		  end
-    always@(*)
-        begin
+	 always@(*)
+	     begin
 		   case(state)
 			IDLE:
 				begin

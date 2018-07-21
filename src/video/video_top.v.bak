@@ -31,7 +31,7 @@ LRCLK, NewFrame, LeftRecData, RightRecData, DAC_SDATA);
    
    assign DAC_SDATA = sig2[N-1];
    
-   Register #(.N(N)) r2(.d(24'b0), .ld(1'0), .sdin(ADC_SDATA), .clk(BCLK), .q(sig3));
+   Register #(.N(N)) r2(.d(24'b0), .ld(1'b0), .sdin(ADC_SDATA), .clk(BCLK), .q(sig3));
    d #(.N(24)) a5(.d(sig3), .q(LeftRecData), .en(enl), .clk(BCLK));
    d #(.N(24)) a6(.d(sig3), .q(RightRecData), .en(enr), .clk(BCLK));
 endmodule

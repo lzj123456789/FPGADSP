@@ -2,20 +2,28 @@ module Com_control(reset, Write, ComEnd, NewCom, clk);
     input clk, ComEnd, NewCom, reset;
     output Write;
     reg Write;
-    reg state;
+    reg [1:0]state;
+    reg [1:0]n_state;
     parameter Comreset=0, ComWrite=1, ComWait=2, ComStop=3;
     always@(posedge clk)
-       if(reset) begin state=Comreset; Write=0; end
-       else case (state)
-           2'b00: begin state=ComWrite; Write=1; end
-           2'b01: begin state=ComWait; Write=0; end
-           2'b10: begin if(ComEnd) 
-                             begin state=ComStop; Write=0; end
-                        else if(NewCom) 
-                                begin state=ComWrite; Write=1; end
+       begin
+       if(reset) state <= Comreset;
+       else state <= n_state;
+       end
+    always@(*)
+       begin
+       case (state)
+           Comreset: begin n_state <= ComWrite; Write=0; end
+           ComWrite: begin n_state <= ComWait; Write=1; end
+           ComWait: begin Write = 0;
+                             if(ComEnd) 
+                             begin n_state <= ComStop;  end
+                             else if(NewCom) 
+                                begin n_state <= ComWrite; end
                              else 
-                                begin state=ComWait; Write=0; end
+                                begin n_state <= ComWait; end
                     end
-           2'b11: begin state = ComStop; Write = 0; end           
-       endcase    
+        default: begin n_state <= ComStop; Write = 0; end           
+       endcase
+       end   
 endmodule

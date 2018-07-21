@@ -6,7 +6,8 @@ module I2C(reset, write, I2C_clk, Addr, SubAddrH, SubAddrL, Data, SDA, SCL, read
     
     wire [2:0] sel;
     
-    wire SclEn, ready, errory, SetCountMax;    
+    wire SclEn, ready, errory, SetCountMax;
+    wire LastData; 
     I2C_Control i1 (.reset(reset), .write(write), .I2C_clk(I2C_clk), .sel(sel), .SclEn(SclEn), .ready(ready), 
                  .errory(errory), .SetCountMax(SetCountMax), .SDA(SDA), .SCL(SCL), .LastData(LastData));
     

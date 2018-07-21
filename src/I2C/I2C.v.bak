@@ -1,13 +1,14 @@
 module I2C(reset, write, I2C_clk, Addr, SubAddrH, SubAddrL, Data, SDA, SCL, ready, errory);
     input reset, write, I2C_clk;
     input [7:0] Addr, SubAddrH, SubAddrL, Data;
-    output SDA, SCL, ready, errory;
+    output ready, errory;
+    inout SDA, SCL;
     
     wire [2:0] sel;
     
     wire SclEn, ready, errory, SetCountMax;    
     I2C_Control i1 (.reset(reset), .write(write), .I2C_clk(I2C_clk), .sel(sel), .SclEn(SclEn), .ready(ready), 
-                 .error(errory), .SetCountMax(SetCountMax), .SDA(SDA), .SCL(SCL), .LastData(LastData));
+                 .errory(errory), .SetCountMax(SetCountMax), .SDA(SDA), .SCL(SCL), .LastData(LastData));
     
     wire [2:0] bit_n;
     sub sub1 (.clk(I2C_clk), .en(~SCL), .s(SetCountMax), .q(bit_n), .LastData(LastData));
