@@ -11,7 +11,7 @@ h_rom_l h_rom_l1(.addr(qAddr),.dout(in2),.RisingTone(RisingTone));
 
 wire[31:0] MultiResult;
 
-booth_multiplier booth_multiplier0(.A(x),.B(in2),.P(MultiResult));
+booth_multiplier booth_multiplier0(.A(x),.B((in2<<2)),.P(MultiResult));
 wire[31:0] raw_y;
 wire[32:0] sumd; 
 Naddr #(.N(33)) Naddr(.a({raw_y[31],raw_y}),.b({MultiResult[31],MultiResult}),.s(sumd),.ci(1'b0),.co());
