@@ -17,6 +17,8 @@ firControl firControl0(
 	.clr(clr));
 
 reg[511:0] x_temp;
+reg[15:0] x_out;
+wire[4:0] q;
 
 
 always @(posedge clk ) begin
