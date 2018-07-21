@@ -10,6 +10,7 @@ wire[7:0] factor2,factor1;
 wire stage1;
 wire smooth;
 wire[9:0] NextAddr;
+wire FactorSel,SClr,OutEn,AddrSel;
 signalGenerate signalGenerate0(.RisingTone(RisingTone),
 	.n(n),
 	.factor1(factor1),
