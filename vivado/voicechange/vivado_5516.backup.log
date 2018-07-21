@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sat Jul 21 11:10:19 2018
+# Process ID: 5516
+# Current directory: D:/resource/study/lab20/FPGADSP/vivado/voicechange
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17060 D:\resource\study\lab20\FPGADSP\vivado\voicechange\voicechange.xpr
+# Log file: D:/resource/study/lab20/FPGADSP/vivado/voicechange/vivado.log
+# Journal file: D:/resource/study/lab20/FPGADSP/vivado/voicechange\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/resource/study/lab20/FPGADSP/vivado/voicechange/voicechange.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2017.1/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 821.418 ; gain = 121.496
+update_compile_order -fileset sources_1
+remove_files  D:/resource/study/lab20/FPGADSP/src/counterT.v
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 21 11:18:24 2018...
