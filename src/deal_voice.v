@@ -18,8 +18,8 @@ module deal_voice(clk, reset, ADC_SDATA, ChangeEn, RisingTone,
 	//音频输入处理
 	wire[23:0] LeftPlayData, RightPlayData, LeftRecData, RightRecData;
     wire NewFrame;
-	de_coder de_coder(
-		.audio_clk(audio_clk), 
+	AudioInterface de_coder(
+		.clk(audio_clk), 
 		.reset(reset), 
 		.ADC_SDATA(ADC_SDATA), 
 		.LeftPlayData(LeftPlayData), 
@@ -47,7 +47,7 @@ module deal_voice(clk, reset, ADC_SDATA, ChangeEn, RisingTone,
 	fir_H firh(.sample(ready),.xIn(RightRecData[23:8]),.clk(sys_clk),.yOut(Sampletemp),.reset(reset));
 	
 	changevoice changevoice(.SampleIn(RisingTone?Sampletemp:RightRecData[23:8]),.ready(ready),.clk(sys_clk),
-	  .RisingTone(RisingTone),.reset(reset),.SampleOut(SampleOut),.SampleCount());
+	  .RisingTone(RisingTone),.reset(reset),.SampleOut(SampleOut));
   
   assign RightPlayData = ChangeEn?{SampleOut,8'd0}:RightRecData;
   assign LeftPlayData = ChangeEn?{SampleOut,8'd0}:LeftRecData;
