@@ -1,4 +1,5 @@
-module fir_H(xIn,sample,clk,reset,yOut);
+module fir_H(xIn,sample,clk,reset,yOut,mode);
+input mode;
 input sample, clk, reset;
 	input[15:0] xIn;
 	output[15:0] yOut;
@@ -69,7 +70,7 @@ input sample, clk, reset;
 
 	wire[15:0] b;
 
-	h_rom_h h(.addr(~q+1),.dout(b));
+	h_rom_h h(.addr(~q+1),.dout(b),.mode(mode));
 
 
 	//multiplier
