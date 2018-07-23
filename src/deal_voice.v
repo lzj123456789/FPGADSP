@@ -4,7 +4,7 @@ module deal_voice(clk, reset, ADC_SDATA, ChangeEn, RisingTone,
 	output DAC_SDATA, MCLK, BCLK, LRCLK;
 	inout SDA,SCL;
 	
-	wire[15:0] Sampletemp, SampleOut;
+	wire[15:0] temp0,Sampletemp, SampleOut;
 	wire sys_clk,audio_clk;
 	//DCM处理clk
 	DCM_PLL DCM(
@@ -18,13 +18,12 @@ module deal_voice(clk, reset, ADC_SDATA, ChangeEn, RisingTone,
 	//音频输入处理
 	wire[23:0] LeftPlayData, RightPlayData, LeftRecData, RightRecData;
     wire NewFrame;
-	AudioInterface de_coder(
-		.clk(audio_clk), 
+	de_coder de_coder(
+		.audio_clk(audio_clk), 
 		.reset(reset), 
 		.ADC_SDATA(ADC_SDATA), 
 		.LeftPlayData(LeftPlayData), 
-		.RightPlayData(RightPlayData), 
-		//output
+		.RightPlayData(RightPlayData), 	//output
 		.LeftRecData(LeftRecData), 
 		.RightRecData(RightRecData), 
 		.DAC_SDATA(DAC_SDATA), 
@@ -44,12 +43,12 @@ module deal_voice(clk, reset, ADC_SDATA, ChangeEn, RisingTone,
 
 
 	
-	fir_H firh(.sample(ready),.xIn(RightRecData[23:8]),.clk(sys_clk),.yOut(Sampletemp),.reset(reset));
+	fir_H firh1(.sample(ready),.xIn(RightRecData[23:8]),.clk(sys_clk),.yOut(temp0),.reset(reset),.mode(1'b0));
 	
-	changevoice changevoice(.SampleIn(RisingTone?Sampletemp:RightRecData[23:8]),.ready(ready),.clk(sys_clk),
+	changevoice changevoice(.SampleIn(RisingTone?temp0:RightRecData[23:8]),.ready(ready),.clk(sys_clk),
 	  .RisingTone(RisingTone),.reset(reset),.SampleOut(SampleOut));
-  
-  assign RightPlayData = ChangeEn?{SampleOut,8'd0}:RightRecData;
-  assign LeftPlayData = ChangeEn?{SampleOut,8'd0}:LeftRecData;
+  fir_H firh2(.sample(ready),.xIn(SampleOut),.clk(sys_clk),.yOut(Sampletemp),.reset(reset),.mode(1'b1));
+  assign RightPlayData = ChangeEn?{Sampletemp,8'd0}:RightRecData;
+  assign LeftPlayData = ChangeEn?{Sampletemp,8'd0}:LeftRecData;
   
 endmodule
