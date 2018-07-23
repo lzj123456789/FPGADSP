@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a200tfbg484-1" LaunchTime="1532141350">
+<GenRun Id="synth_1" LaunchPart="xc7a200tfbg484-1" LaunchTime="1532326910">
   <File Type="RDS-PROPCONSTRS" Name="deal_voice_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="deal_voice.tcl"/>
   <File Type="RDS-RDS" Name="deal_voice.vds"/>
@@ -59,13 +59,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../src/SelTWtoO.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PPRDIR/../../src/inputbuf/addrprocess.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -115,7 +108,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../src/counterT.v">
+    <File Path="$PPRDIR/../../src/Com/counterT.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -264,14 +257,6 @@
     </File>
     <File Path="$PPRDIR/../../src/deal_voice.v">
       <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../../src/Com/counterT.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

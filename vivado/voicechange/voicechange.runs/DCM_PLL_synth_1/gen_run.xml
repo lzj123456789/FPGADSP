@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="DCM_PLL_synth_1" LaunchPart="xc7a200tfbg484-1" LaunchTime="1532141350">
-  <File Type="RDS-PROPCONSTRS" Name="DCM_PLL_drc_synth.rpt"/>
+<GenRun Id="DCM_PLL_synth_1" LaunchPart="xc7a200tfbg484-1" LaunchTime="1532313560">
   <File Type="PA-TCL" Name="DCM_PLL.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="DCM_PLL_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="DCM_PLL.vds"/>
   <File Type="RDS-UTIL" Name="DCM_PLL_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="DCM_PLL_utilization_synth.pb"/>

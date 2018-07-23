@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-| Date         : Sat Jul 21 10:51:55 2018
-| Host         : DESKTOP-KL6M9RO running 64-bit major release  (build 9200)
+| Date         : Mon Jul 23 14:24:03 2018
+| Host         : Admin-pc running 64-bit Service Pack 1  (build 7601)
 | Command      : report_drc -file deal_voice_drc_opted.rpt
 | Design       : deal_voice
 | Device       : xc7a200tfbg484-1

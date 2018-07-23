@@ -47,7 +47,7 @@ module deal_voice(clk, reset, ADC_SDATA, ChangeEn, RisingTone,
 	
 	changevoice changevoice(.SampleIn(RisingTone?temp0:RightRecData[23:8]),.ready(ready),.clk(sys_clk),
 	  .RisingTone(RisingTone),.reset(reset),.SampleOut(SampleOut));
-  fir_H firh2(.sample(ready),.xIn(SampleOut),.clk(sys_clk),.yOut(Sampletemp),.reset(reset),.mode(1'b1));
+  fir_H firh2(.sample(ready),.xIn(SampleOut),.clk(sys_clk),.yOut(Sampletemp),.reset(reset),.mode(1'b0));
   assign RightPlayData = ChangeEn?{Sampletemp,8'd0}:RightRecData;
   assign LeftPlayData = ChangeEn?{Sampletemp,8'd0}:LeftRecData;
   

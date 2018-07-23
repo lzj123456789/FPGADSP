@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-| Date         : Sat Jul 21 10:53:28 2018
-| Host         : DESKTOP-KL6M9RO running 64-bit major release  (build 9200)
+| Date         : Mon Jul 23 14:25:31 2018
+| Host         : Admin-pc running 64-bit Service Pack 1  (build 7601)
 | Command      : report_drc -file deal_voice_drc_routed.rpt -pb deal_voice_drc_routed.pb -rpx deal_voice_drc_routed.rpx
 | Design       : deal_voice
 | Device       : xc7a200tfbg484-1
@@ -24,12 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 4
+             Violations found: 5
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| PDRC-153 | Warning  | Gated clock check                                   | 3          |
+| PDRC-153 | Warning  | Gated clock check                                   | 4          |
 +----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -59,7 +59,12 @@ Related violations: <none>
 
 PDRC-153#3 Warning
 Gated clock check  
-Net firh/firControl0/nextstate_reg[1]_i_2_n_0 is a gated clock net sourced by a combinational pin firh/firControl0/nextstate_reg[1]_i_2/O, cell firh/firControl0/nextstate_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net firh1/firControl0/nextstate_reg[1]_i_2_n_0 is a gated clock net sourced by a combinational pin firh1/firControl0/nextstate_reg[1]_i_2/O, cell firh1/firControl0/nextstate_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net firh2/firControl0/nextstate_reg[1]_i_2__0_n_0 is a gated clock net sourced by a combinational pin firh2/firControl0/nextstate_reg[1]_i_2__0/O, cell firh2/firControl0/nextstate_reg[1]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

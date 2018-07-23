@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-| Date         : Sat Jul 21 10:50:39 2018
-| Host         : DESKTOP-KL6M9RO running 64-bit major release  (build 9200)
+| Date         : Mon Jul 23 14:23:23 2018
+| Host         : Admin-pc running 64-bit Service Pack 1  (build 7601)
 | Command      : report_utilization -file deal_voice_utilization_synth.rpt -pb deal_voice_utilization_synth.pb
 | Design       : deal_voice
 | Device       : 7a200tfbg484-1
@@ -30,13 +30,13 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             | 1622 |     0 |    134600 |  1.21 |
-|   LUT as Logic          | 1622 |     0 |    134600 |  1.21 |
+| Slice LUTs*             | 2178 |     0 |    134600 |  1.62 |
+|   LUT as Logic          | 2178 |     0 |    134600 |  1.62 |
 |   LUT as Memory         |    0 |     0 |     46200 |  0.00 |
-| Slice Registers         |  872 |     0 |    269200 |  0.32 |
-|   Register as Flip Flop |  864 |     0 |    269200 |  0.32 |
-|   Register as Latch     |    8 |     0 |    269200 | <0.01 |
-| F7 Muxes                |   74 |     0 |     67300 |  0.11 |
+| Slice Registers         | 1439 |     0 |    269200 |  0.53 |
+|   Register as Flip Flop | 1429 |     0 |    269200 |  0.53 |
+|   Register as Latch     |   10 |     0 |    269200 | <0.01 |
+| F7 Muxes                |  135 |     0 |     67300 |  0.20 |
 | F8 Muxes                |    2 |     0 |     33650 | <0.01 |
 +-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -55,9 +55,9 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
-| 8     |          Yes |           - |        Reset |
+| 10    |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 864   |          Yes |       Reset |            - |
+| 1429  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -149,16 +149,16 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  864 |        Flop & Latch |
-| LUT6     |  797 |                 LUT |
-| LUT5     |  621 |                 LUT |
-| LUT3     |  316 |                 LUT |
-| LUT2     |  114 |                 LUT |
-| LUT4     |   90 |                 LUT |
-| MUXF7    |   74 |               MuxFx |
-| LUT1     |   39 |                 LUT |
-| CARRY4   |   13 |          CarryLogic |
-| LDCE     |    8 |        Flop & Latch |
+| FDRE     | 1429 |        Flop & Latch |
+| LUT6     | 1143 |                 LUT |
+| LUT5     |  751 |                 LUT |
+| LUT3     |  401 |                 LUT |
+| LUT2     |  222 |                 LUT |
+| MUXF7    |  135 |               MuxFx |
+| LUT4     |   99 |                 LUT |
+| LUT1     |   63 |                 LUT |
+| CARRY4   |   17 |          CarryLogic |
+| LDCE     |   10 |        Flop & Latch |
 | IBUF     |    6 |                  IO |
 | OBUF     |    4 |                  IO |
 | OBUFT    |    2 |                  IO |
