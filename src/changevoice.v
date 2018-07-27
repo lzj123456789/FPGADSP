@@ -7,7 +7,7 @@ module	changevoice(SampleIn,ready,clk,RisingTone,reset,SampleOut);
 	wire [1:0] FirInSel;
 	wire [9:0] InBufAddra,InBufAddrb;
 	
-	//鍦板潃澶勭悊
+	//地址处理模块
 	addrprocess inputaddr(
 		//input
 		.sys_clk(clk),.InCopy(InCopy),.ready(ready),.RisingTone(RisingTone),
@@ -35,7 +35,7 @@ module	changevoice(SampleIn,ready,clk,RisingTone,reset,SampleOut);
 		.FirEnd(FirEnd),.y(Outd)
 		);
 		
-	//鎺у埗鍣?
+	//控制器进行信号控制
 	control control(
 		//input
 		.IncopyEnd(InCopyEnd),.reset(reset),.FirEnd(FirEnd),.ProcessEnd(ProcessEnd),
@@ -47,7 +47,7 @@ module	changevoice(SampleIn,ready,clk,RisingTone,reset,SampleOut);
 	wire[9:0] Out_a_1, Out_a_2, Out_a;
 	wire ProcessEnd_1, ProcessEnd_2;
 	
-	//1024/576杩涘埗璁℃暟鍣?
+	//1024/576计数器
 	counterT #(.n(10'h3ff), .counter_bits(10))
 		counter2_1(
 		.r(ProcessStart), .clk(clk), .q(Out_a_1), 
@@ -64,7 +64,7 @@ module	changevoice(SampleIn,ready,clk,RisingTone,reset,SampleOut);
 	assign ProcessEnd = (~RisingTone)? ProcessEnd_1:ProcessEnd_2;
 	
 			
-	//骞虫粦婊ゆ尝
+	//平滑滤波
 	smoothFilter smoothFilter(
 		.RisingTone(RisingTone),.sys_clk(clk),.ready(ready),
 		.reset(reset),.Outa(Out_a),.Outd(Outd),.OutBufWea(OutBufWea),.SampleOut(SampleOut)

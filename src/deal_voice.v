@@ -36,15 +36,16 @@ module deal_voice(clk, reset, ADC_SDATA, ChangeEn, RisingTone,
 		.error()
 		);
     wire temp, ready,temp1;
+  //同步化处理
 	dffre #(.WIDTH(1)) D1(.d(NewFrame), .clk(sys_clk), .r(reset), .q(temp), .en(1'b1));
 	dffre #(.WIDTH(1)) D2(.d(temp), .clk(sys_clk), .r(reset), .q(temp1), .en(1'b1));
 
 	assign ready = (~temp1)&temp;
 
 
-	
+	//高通滤波器进行信号预处理
 	fir_H firh1(.sample(ready),.xIn(RightRecData[23:8]),.clk(sys_clk),.yOut(temp0),.reset(reset),.mode(1'b0));
-	
+	//变声子模块
 	changevoice changevoice(.SampleIn(RisingTone?temp0:RightRecData[23:8]),.ready(ready),.clk(sys_clk),
 	  .RisingTone(RisingTone),.reset(reset),.SampleOut(SampleOut));
   fir_H firh2(.sample(ready),.xIn(SampleOut),.clk(sys_clk),.yOut(Sampletemp),.reset(reset),.mode(1'b0));

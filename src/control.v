@@ -10,7 +10,7 @@ module control(ready,IncopyEnd,ProcessStart,reset,FirEnd,ProcessEnd,clk,
 	parameter Wait = 3'b000,FirReset = 3'b001,MAC = 3'b010,DataOut = 3'b011,
 		RAMWrite = 3'b100,CopyWait = 3'b101,Copy = 3'b110;
 		
-	
+	//二段式进行状态变换
 	always @(posedge clk)
 	begin
 		if(reset)
